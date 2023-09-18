@@ -75,13 +75,10 @@
     <packagedElement xmi:type="uml:UseCase" xmi:id="_jmOrgFXxEe6g6J4Cq0uO-w" name="Закакз товаров со склада" subject="_UEQn4FXwEe6g6J4Cq0uO-w">
       <include xmi:id="_yks18FXxEe6g6J4Cq0uO-w" addition="_nwEOsFXxEe6g6J4Cq0uO-w"/>
       <include xmi:id="_y9MOcFXxEe6g6J4Cq0uO-w" addition="_orZOgFXxEe6g6J4Cq0uO-w"/>
+      <include xmi:id="_URxtwFZkEe6G4LcKVjAuZw" addition="_u5RGAFXxEe6g6J4Cq0uO-w"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_nwEOsFXxEe6g6J4Cq0uO-w" name="Добавить товар" subject="_UEQn4FXwEe6g6J4Cq0uO-w">
-      <include xmi:id="_xb-TUFXxEe6g6J4Cq0uO-w" addition="_u5RGAFXxEe6g6J4Cq0uO-w"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_orZOgFXxEe6g6J4Cq0uO-w" name="Удалить товар" subject="_UEQn4FXwEe6g6J4Cq0uO-w">
-      <include xmi:id="_xyG7YFXxEe6g6J4Cq0uO-w" addition="_u5RGAFXxEe6g6J4Cq0uO-w"/>
-    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_nwEOsFXxEe6g6J4Cq0uO-w" name="Добавить товар" subject="_UEQn4FXwEe6g6J4Cq0uO-w"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_orZOgFXxEe6g6J4Cq0uO-w" name="Удалить товар" subject="_UEQn4FXwEe6g6J4Cq0uO-w"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_u5RGAFXxEe6g6J4Cq0uO-w" name="Составить накладную" subject="_UEQn4FXwEe6g6J4Cq0uO-w"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Component" xmi:id="_WZHmcFXwEe6g6J4Cq0uO-w" name="Кладовщик" useCase="__kDoUFXxEe6g6J4Cq0uO-w _ASI2UFXyEe6g6J4Cq0uO-w _Br7TwFXyEe6g6J4Cq0uO-w">
