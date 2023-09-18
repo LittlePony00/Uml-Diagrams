@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Uml-Diagrams_Shop and Warehouse (useCases)</name>
+	<name>Shop and Warehouse (useCases)</name>
 	<comment></comment>
 	<projects>
 	</projects>
 	<buildSpec>
 	</buildSpec>
 	<natures>
+		<nature>org.eclipse.sirius.nature.modelingproject</nature>
+		<nature>org.obeonetwork.dsl.uml2.core.umlProjectNature</nature>
 	</natures>
 </projectDescription>
