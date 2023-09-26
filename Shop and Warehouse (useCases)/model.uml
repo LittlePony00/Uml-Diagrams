@@ -84,7 +84,9 @@
     <packagedElement xmi:type="uml:UseCase" xmi:id="_u5RGAFXxEe6g6J4Cq0uO-w" name="Составить накладную" subject="_UEQn4FXwEe6g6J4Cq0uO-w"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Component" xmi:id="_WZHmcFXwEe6g6J4Cq0uO-w" name="Кладовщик" useCase="__kDoUFXxEe6g6J4Cq0uO-w _ASI2UFXyEe6g6J4Cq0uO-w _Br7TwFXyEe6g6J4Cq0uO-w">
-    <packagedElement xmi:type="uml:UseCase" xmi:id="__kDoUFXxEe6g6J4Cq0uO-w" name="Отправка и приём товаров со склада в магазин" subject="_WZHmcFXwEe6g6J4Cq0uO-w"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="__kDoUFXxEe6g6J4Cq0uO-w" name="Отправка товаров со склада в магазин" subject="_WZHmcFXwEe6g6J4Cq0uO-w">
+      <include xmi:id="_lmdQMFx7Ee6pWp9JMuvv0w" addition="_Br7TwFXyEe6g6J4Cq0uO-w"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_ASI2UFXyEe6g6J4Cq0uO-w" name="Прием товаров" subject="_WZHmcFXwEe6g6J4Cq0uO-w"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_Br7TwFXyEe6g6J4Cq0uO-w" name="Подбор товаров в соответствии с накладной" subject="_WZHmcFXwEe6g6J4Cq0uO-w"/>
   </packagedElement>
@@ -111,9 +113,5 @@
   <packagedElement xmi:type="uml:Association" xmi:id="_5yZssFb3Ee6kbO0elY8HfA" memberEnd="_5yZssVb3Ee6kbO0elY8HfA _5yZsslb3Ee6kbO0elY8HfA">
     <ownedEnd xmi:id="_5yZssVb3Ee6kbO0elY8HfA" type="_b1ou8FXvEe6g6J4Cq0uO-w" association="_5yZssFb3Ee6kbO0elY8HfA"/>
     <ownedEnd xmi:id="_5yZsslb3Ee6kbO0elY8HfA" type="_ASI2UFXyEe6g6J4Cq0uO-w" association="_5yZssFb3Ee6kbO0elY8HfA"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_73BP0Fb3Ee6kbO0elY8HfA" memberEnd="_73BP0Vb3Ee6kbO0elY8HfA _73BP0lb3Ee6kbO0elY8HfA">
-    <ownedEnd xmi:id="_73BP0Vb3Ee6kbO0elY8HfA" type="_b1ou8FXvEe6g6J4Cq0uO-w" association="_73BP0Fb3Ee6kbO0elY8HfA"/>
-    <ownedEnd xmi:id="_73BP0lb3Ee6kbO0elY8HfA" type="_Br7TwFXyEe6g6J4Cq0uO-w" association="_73BP0Fb3Ee6kbO0elY8HfA"/>
   </packagedElement>
 </uml:Model>
