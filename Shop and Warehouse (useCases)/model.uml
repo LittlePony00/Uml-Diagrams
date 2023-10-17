@@ -114,4 +114,188 @@
     <ownedEnd xmi:id="_5yZssVb3Ee6kbO0elY8HfA" type="_b1ou8FXvEe6g6J4Cq0uO-w" association="_5yZssFb3Ee6kbO0elY8HfA"/>
     <ownedEnd xmi:id="_5yZsslb3Ee6kbO0elY8HfA" type="_ASI2UFXyEe6g6J4Cq0uO-w" association="_5yZssFb3Ee6kbO0elY8HfA"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_A41mgGyGEe65l6EfhkxMNw" name="Персонал" visibility="public">
+    <packageImport xmi:id="_0tDpUGyJEe65l6EfhkxMNw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <ownedAttribute xmi:id="__Y12kGyJEe65l6EfhkxMNw" name="Пароль" visibility="public" type="_DXZ94GyKEe65l6EfhkxMNw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__Y12kWyJEe65l6EfhkxMNw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__Y12kmyJEe65l6EfhkxMNw" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_DXZ94GyKEe65l6EfhkxMNw" name="Strig "/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_EhytYGyKEe65l6EfhkxMNw" name="Персонал" visibility="public">
+    <ownedAttribute xmi:id="_F1g_EGyKEe65l6EfhkxMNw" name="Логин" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F1g_EWyKEe65l6EfhkxMNw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F1g_EmyKEe65l6EfhkxMNw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_IDLJcGyKEe65l6EfhkxMNw" name="Пароль" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IDLJcWyKEe65l6EfhkxMNw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IDMXkGyKEe65l6EfhkxMNw" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_K3Ie0GyKEe65l6EfhkxMNw" name="Вход в систему" visibility="private"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Sg4ecGyKEe65l6EfhkxMNw" name="Администратор" visibility="public">
+    <ownedOperation xmi:id="_aZ1-wGyKEe65l6EfhkxMNw" name="Регестрация персонала" visibility="private"/>
+    <ownedOperation xmi:id="_fp5jIGyKEe65l6EfhkxMNw" name="Составление списка товаров" visibility="private"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_YWQ9cGyKEe65l6EfhkxMNw" memberEnd="_YWQ9cWyKEe65l6EfhkxMNw _YWQ9dGyKEe65l6EfhkxMNw" navigableOwnedEnd="_YWQ9cWyKEe65l6EfhkxMNw _YWQ9dGyKEe65l6EfhkxMNw">
+    <ownedEnd xmi:id="_YWQ9cWyKEe65l6EfhkxMNw" name="персоналs" type="_EhytYGyKEe65l6EfhkxMNw" association="_YWQ9cGyKEe65l6EfhkxMNw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YWQ9cmyKEe65l6EfhkxMNw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YWQ9c2yKEe65l6EfhkxMNw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_YWQ9dGyKEe65l6EfhkxMNw" name="администраторs" type="_Sg4ecGyKEe65l6EfhkxMNw" association="_YWQ9cGyKEe65l6EfhkxMNw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YWQ9dWyKEe65l6EfhkxMNw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YWQ9dmyKEe65l6EfhkxMNw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_m7VwcGyKEe65l6EfhkxMNw" name="Регестрация персонала" visibility="public">
+    <ownedOperation xmi:id="_s4DmgGyKEe65l6EfhkxMNw" name="Выдача ролей" visibility="private"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_urujkGyKEe65l6EfhkxMNw" memberEnd="_urujkWyKEe65l6EfhkxMNw _urujlGyKEe65l6EfhkxMNw" navigableOwnedEnd="_urujkWyKEe65l6EfhkxMNw _urujlGyKEe65l6EfhkxMNw">
+    <ownedEnd xmi:id="_urujkWyKEe65l6EfhkxMNw" name="администраторs" type="_Sg4ecGyKEe65l6EfhkxMNw" association="_urujkGyKEe65l6EfhkxMNw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_urujkmyKEe65l6EfhkxMNw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_urujk2yKEe65l6EfhkxMNw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_urujlGyKEe65l6EfhkxMNw" name="регестрация персоналаs" type="_m7VwcGyKEe65l6EfhkxMNw" association="_urujkGyKEe65l6EfhkxMNw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_urujlWyKEe65l6EfhkxMNw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_urujlmyKEe65l6EfhkxMNw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_v9RD8GyKEe65l6EfhkxMNw" name="Составление списка товаров" visibility="public">
+    <ownedOperation xmi:id="_zfw6UGyKEe65l6EfhkxMNw" name="Добавить товар" visibility="private">
+      <ownedParameter xmi:id="_aviFcGyLEe65l6EfhkxMNw" name="Товар" visibility="private"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0uld4GyKEe65l6EfhkxMNw" name="Удалить товар" visibility="private">
+      <ownedParameter xmi:id="_fKX5EGyLEe65l6EfhkxMNw" name="Товар"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_19RekGyKEe65l6EfhkxMNw" name="Изменить товар" visibility="private">
+      <ownedParameter xmi:id="_hTY0AGyLEe65l6EfhkxMNw" name="Товар"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_3a224GyKEe65l6EfhkxMNw" memberEnd="_3a224WyKEe65l6EfhkxMNw _3a225GyKEe65l6EfhkxMNw" navigableOwnedEnd="_3a224WyKEe65l6EfhkxMNw _3a225GyKEe65l6EfhkxMNw">
+    <ownedEnd xmi:id="_3a224WyKEe65l6EfhkxMNw" name="администраторs" type="_Sg4ecGyKEe65l6EfhkxMNw" association="_3a224GyKEe65l6EfhkxMNw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3a224myKEe65l6EfhkxMNw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3a2242yKEe65l6EfhkxMNw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_3a225GyKEe65l6EfhkxMNw" name="составление списка товаровs" type="_v9RD8GyKEe65l6EfhkxMNw" association="_3a224GyKEe65l6EfhkxMNw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3a225WyKEe65l6EfhkxMNw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3a225myKEe65l6EfhkxMNw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_CAzh4GyLEe65l6EfhkxMNw" name="Кладовщик" visibility="public">
+    <ownedOperation xmi:id="_stff0GyLEe65l6EfhkxMNw" name="Приём товаров" visibility="private"/>
+    <ownedOperation xmi:id="_y_ozUGyLEe65l6EfhkxMNw" name="Отправка товаров в магазин" visibility="private"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_133ksGyLEe65l6EfhkxMNw" memberEnd="_133ksWyLEe65l6EfhkxMNw _133ktGyLEe65l6EfhkxMNw" navigableOwnedEnd="_133ksWyLEe65l6EfhkxMNw _133ktGyLEe65l6EfhkxMNw">
+    <ownedEnd xmi:id="_133ksWyLEe65l6EfhkxMNw" name="персоналs" type="_EhytYGyKEe65l6EfhkxMNw" association="_133ksGyLEe65l6EfhkxMNw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_133ksmyLEe65l6EfhkxMNw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_133ks2yLEe65l6EfhkxMNw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_133ktGyLEe65l6EfhkxMNw" name="кладовщикs" type="_CAzh4GyLEe65l6EfhkxMNw" association="_133ksGyLEe65l6EfhkxMNw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_133ktWyLEe65l6EfhkxMNw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_133ktmyLEe65l6EfhkxMNw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_2zb1EGyLEe65l6EfhkxMNw" name="Приём товаров" visibility="public"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_5ZeqQGyLEe65l6EfhkxMNw" name="Отправка товаров в магазин" visibility="public">
+    <ownedOperation xmi:id="_JNvNMGyMEe65l6EfhkxMNw" name="Подбор товаров в соответствии накладной" visibility="private">
+      <ownedParameter xmi:id="_Mt-ZwGyMEe65l6EfhkxMNw" name="Товары" visibility="protected"/>
+      <ownedParameter xmi:id="_NDIxcGyMEe65l6EfhkxMNw" name="Накладная" visibility="protected"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WdnH0GyMEe65l6EfhkxMNw" memberEnd="_WdnH0WyMEe65l6EfhkxMNw _WdnH1GyMEe65l6EfhkxMNw" navigableOwnedEnd="_WdnH0WyMEe65l6EfhkxMNw _WdnH1GyMEe65l6EfhkxMNw">
+    <ownedEnd xmi:id="_WdnH0WyMEe65l6EfhkxMNw" name="кладовщикs" type="_CAzh4GyLEe65l6EfhkxMNw" association="_WdnH0GyMEe65l6EfhkxMNw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WdnH0myMEe65l6EfhkxMNw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WdnH02yMEe65l6EfhkxMNw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_WdnH1GyMEe65l6EfhkxMNw" name="приём товаровs" type="_2zb1EGyLEe65l6EfhkxMNw" association="_WdnH0GyMEe65l6EfhkxMNw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WdnH1WyMEe65l6EfhkxMNw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WdnH1myMEe65l6EfhkxMNw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WzU5IGyMEe65l6EfhkxMNw" memberEnd="_WzU5IWyMEe65l6EfhkxMNw _WzU5JGyMEe65l6EfhkxMNw" navigableOwnedEnd="_WzU5IWyMEe65l6EfhkxMNw _WzU5JGyMEe65l6EfhkxMNw">
+    <ownedEnd xmi:id="_WzU5IWyMEe65l6EfhkxMNw" name="кладовщикs" type="_CAzh4GyLEe65l6EfhkxMNw" association="_WzU5IGyMEe65l6EfhkxMNw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WzU5ImyMEe65l6EfhkxMNw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WzU5I2yMEe65l6EfhkxMNw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_WzU5JGyMEe65l6EfhkxMNw" name="отправка товаров в магазинs" type="_5ZeqQGyLEe65l6EfhkxMNw" association="_WzU5IGyMEe65l6EfhkxMNw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WzU5JWyMEe65l6EfhkxMNw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WzU5JmyMEe65l6EfhkxMNw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_X1A_oGyMEe65l6EfhkxMNw" name="Продавец" visibility="public">
+    <ownedOperation xmi:id="_awIF4GyMEe65l6EfhkxMNw" name="Заказ товара со склада" visibility="private"/>
+    <ownedOperation xmi:id="_mCIloGyMEe65l6EfhkxMNw" name="Отпуск товара покупателю" visibility="private"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dKJ4UGyMEe65l6EfhkxMNw" memberEnd="_dKJ4UWyMEe65l6EfhkxMNw _dKJ4VGyMEe65l6EfhkxMNw" navigableOwnedEnd="_dKJ4UWyMEe65l6EfhkxMNw _dKJ4VGyMEe65l6EfhkxMNw">
+    <ownedEnd xmi:id="_dKJ4UWyMEe65l6EfhkxMNw" name="персоналs" type="_EhytYGyKEe65l6EfhkxMNw" association="_dKJ4UGyMEe65l6EfhkxMNw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dKJ4UmyMEe65l6EfhkxMNw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dKJ4U2yMEe65l6EfhkxMNw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_dKJ4VGyMEe65l6EfhkxMNw" name="продавецs" type="_X1A_oGyMEe65l6EfhkxMNw" association="_dKJ4UGyMEe65l6EfhkxMNw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dKJ4VWyMEe65l6EfhkxMNw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dKJ4VmyMEe65l6EfhkxMNw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oc3isGyMEe65l6EfhkxMNw" name="Заказ товара со склада" visibility="public">
+    <ownedOperation xmi:id="_rhUyMGyMEe65l6EfhkxMNw" name="Добавить товар" visibility="private">
+      <ownedParameter xmi:id="_1PZaAGyMEe65l6EfhkxMNw" name="Товар"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_tKd6QGyMEe65l6EfhkxMNw" name="Удалить товар" visibility="private">
+      <ownedParameter xmi:id="_2sBwEGyMEe65l6EfhkxMNw" name="Товар"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_yOo-wGyMEe65l6EfhkxMNw" name="Составить накладную" visibility="private">
+      <ownedParameter xmi:id="_4O0_kGyMEe65l6EfhkxMNw" name="Товары"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_rMcHUGyMEe65l6EfhkxMNw" memberEnd="_rMcHUWyMEe65l6EfhkxMNw _rMcHVGyMEe65l6EfhkxMNw" navigableOwnedEnd="_rMcHUWyMEe65l6EfhkxMNw _rMcHVGyMEe65l6EfhkxMNw">
+    <ownedEnd xmi:id="_rMcHUWyMEe65l6EfhkxMNw" name="продавецs" type="_X1A_oGyMEe65l6EfhkxMNw" association="_rMcHUGyMEe65l6EfhkxMNw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rMcHUmyMEe65l6EfhkxMNw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rMcHU2yMEe65l6EfhkxMNw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_rMcHVGyMEe65l6EfhkxMNw" name="заказ товара со складаs" type="_oc3isGyMEe65l6EfhkxMNw" association="_rMcHUGyMEe65l6EfhkxMNw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rMcHVWyMEe65l6EfhkxMNw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rMcHVmyMEe65l6EfhkxMNw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_6XxCAGyMEe65l6EfhkxMNw" name="Пользователь" visibility="public">
+    <ownedAttribute xmi:id="_FIfZoGyNEe65l6EfhkxMNw" name="Логин" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FIgAsGyNEe65l6EfhkxMNw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FIgAsWyNEe65l6EfhkxMNw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_G3EbUGyNEe65l6EfhkxMNw" name="Пароль" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G3FCYGyNEe65l6EfhkxMNw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G3FCYWyNEe65l6EfhkxMNw" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_IB0-QGyNEe65l6EfhkxMNw" name="Вход в систему" visibility="private"/>
+    <ownedOperation xmi:id="_JlLAUGyNEe65l6EfhkxMNw" name="Забыли пароль" visibility="private"/>
+    <ownedOperation xmi:id="_K13zMGyNEe65l6EfhkxMNw" name="Регистрация" visibility="private"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_OH0sIGyNEe65l6EfhkxMNw" name="Забыли пароль" visibility="private"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_TqC-kGyNEe65l6EfhkxMNw" name="Регистрация" visibility="private"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WjpB4GyNEe65l6EfhkxMNw" memberEnd="_WjpB4WyNEe65l6EfhkxMNw _WjpB5GyNEe65l6EfhkxMNw" navigableOwnedEnd="_WjpB4WyNEe65l6EfhkxMNw _WjpB5GyNEe65l6EfhkxMNw">
+    <ownedEnd xmi:id="_WjpB4WyNEe65l6EfhkxMNw" name="пользовательs" type="_6XxCAGyMEe65l6EfhkxMNw" association="_WjpB4GyNEe65l6EfhkxMNw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WjpB4myNEe65l6EfhkxMNw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WjpB42yNEe65l6EfhkxMNw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_WjpB5GyNEe65l6EfhkxMNw" name="fdfds" type="_OH0sIGyNEe65l6EfhkxMNw" association="_WjpB4GyNEe65l6EfhkxMNw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WjpB5WyNEe65l6EfhkxMNw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WjpB5myNEe65l6EfhkxMNw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_W1bVcGyNEe65l6EfhkxMNw" memberEnd="_W1bVcWyNEe65l6EfhkxMNw _W1bVdGyNEe65l6EfhkxMNw" navigableOwnedEnd="_W1bVcWyNEe65l6EfhkxMNw _W1bVdGyNEe65l6EfhkxMNw">
+    <ownedEnd xmi:id="_W1bVcWyNEe65l6EfhkxMNw" name="пользовательs" type="_6XxCAGyMEe65l6EfhkxMNw" association="_W1bVcGyNEe65l6EfhkxMNw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W1bVcmyNEe65l6EfhkxMNw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W1bVc2yNEe65l6EfhkxMNw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_W1bVdGyNEe65l6EfhkxMNw" name="class14s" type="_TqC-kGyNEe65l6EfhkxMNw" association="_W1bVcGyNEe65l6EfhkxMNw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W1bVdWyNEe65l6EfhkxMNw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W1bVdmyNEe65l6EfhkxMNw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
 </uml:Model>
