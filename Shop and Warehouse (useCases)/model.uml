@@ -125,19 +125,9 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_DXZ94GyKEe65l6EfhkxMNw" name="Strig "/>
   <packagedElement xmi:type="uml:Class" xmi:id="_EhytYGyKEe65l6EfhkxMNw" name="Персонал" visibility="public">
-    <ownedAttribute xmi:id="_F1g_EGyKEe65l6EfhkxMNw" name="Логин" visibility="private">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F1g_EWyKEe65l6EfhkxMNw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F1g_EmyKEe65l6EfhkxMNw" value="1"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_IDLJcGyKEe65l6EfhkxMNw" name="Пароль" visibility="private">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IDLJcWyKEe65l6EfhkxMNw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IDMXkGyKEe65l6EfhkxMNw" value="1"/>
-    </ownedAttribute>
     <ownedOperation xmi:id="_K3Ie0GyKEe65l6EfhkxMNw" name="Вход в систему" visibility="private"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_Sg4ecGyKEe65l6EfhkxMNw" name="Администратор" visibility="public">
+  <packagedElement xmi:type="uml:Class" xmi:id="_Sg4ecGyKEe65l6EfhkxMNw" name="&lt;Entity> Администратор" visibility="public">
     <ownedOperation xmi:id="_aZ1-wGyKEe65l6EfhkxMNw" name="Регестрация персонала" visibility="private"/>
     <ownedOperation xmi:id="_fp5jIGyKEe65l6EfhkxMNw" name="Составление списка товаров" visibility="private"/>
   </packagedElement>
@@ -151,7 +141,7 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YWQ9dmyKEe65l6EfhkxMNw" value="*"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_m7VwcGyKEe65l6EfhkxMNw" name="Регестрация персонала" visibility="public">
+  <packagedElement xmi:type="uml:Class" xmi:id="_m7VwcGyKEe65l6EfhkxMNw" name="&lt;Control>Регестрация персонала" visibility="public">
     <ownedOperation xmi:id="_s4DmgGyKEe65l6EfhkxMNw" name="Выдача ролей" visibility="private"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_urujkGyKEe65l6EfhkxMNw" memberEnd="_urujkWyKEe65l6EfhkxMNw _urujlGyKEe65l6EfhkxMNw" navigableOwnedEnd="_urujkWyKEe65l6EfhkxMNw _urujlGyKEe65l6EfhkxMNw">
@@ -164,7 +154,7 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_urujlmyKEe65l6EfhkxMNw" value="*"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_v9RD8GyKEe65l6EfhkxMNw" name="Составление списка товаров" visibility="public">
+  <packagedElement xmi:type="uml:Class" xmi:id="_v9RD8GyKEe65l6EfhkxMNw" name="&lt;Boundary> Составление списка товаров" visibility="public">
     <ownedOperation xmi:id="_zfw6UGyKEe65l6EfhkxMNw" name="Добавить товар" visibility="private">
       <ownedParameter xmi:id="_aviFcGyLEe65l6EfhkxMNw" name="Товар" visibility="private"/>
     </ownedOperation>
@@ -185,7 +175,7 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3a225myKEe65l6EfhkxMNw" value="*"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_CAzh4GyLEe65l6EfhkxMNw" name="Кладовщик" visibility="public">
+  <packagedElement xmi:type="uml:Class" xmi:id="_CAzh4GyLEe65l6EfhkxMNw" name="&lt;Entity>Кладовщик" visibility="public">
     <ownedOperation xmi:id="_stff0GyLEe65l6EfhkxMNw" name="Приём товаров" visibility="private"/>
     <ownedOperation xmi:id="_y_ozUGyLEe65l6EfhkxMNw" name="Отправка товаров в магазин" visibility="private"/>
   </packagedElement>
@@ -199,8 +189,11 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_133ktmyLEe65l6EfhkxMNw" value="*"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_2zb1EGyLEe65l6EfhkxMNw" name="Приём товаров" visibility="public"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_5ZeqQGyLEe65l6EfhkxMNw" name="Отправка товаров в магазин" visibility="public">
+  <packagedElement xmi:type="uml:Class" xmi:id="_2zb1EGyLEe65l6EfhkxMNw" name="&lt;Boundary> Приём товаров" visibility="public">
+    <ownedOperation xmi:id="_6zPFUHHXEe6dk5_2zlmDiA" name="Вывод списка товаров" visibility="private"/>
+    <ownedOperation xmi:id="_G7WtsHHYEe6dk5_2zlmDiA" name="Отправка списка товаров" visibility="private"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_5ZeqQGyLEe65l6EfhkxMNw" name="&lt;Control> Отправка товаров в магазин" visibility="public">
     <ownedOperation xmi:id="_JNvNMGyMEe65l6EfhkxMNw" name="Подбор товаров в соответствии накладной" visibility="private">
       <ownedParameter xmi:id="_Mt-ZwGyMEe65l6EfhkxMNw" name="Товары" visibility="protected"/>
       <ownedParameter xmi:id="_NDIxcGyMEe65l6EfhkxMNw" name="Накладная" visibility="protected"/>
@@ -226,7 +219,7 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WzU5JmyMEe65l6EfhkxMNw" value="*"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_X1A_oGyMEe65l6EfhkxMNw" name="Продавец" visibility="public">
+  <packagedElement xmi:type="uml:Class" xmi:id="_X1A_oGyMEe65l6EfhkxMNw" name="&lt;Entity>Продавец" visibility="public">
     <ownedOperation xmi:id="_awIF4GyMEe65l6EfhkxMNw" name="Заказ товара со склада" visibility="private"/>
     <ownedOperation xmi:id="_mCIloGyMEe65l6EfhkxMNw" name="Отпуск товара покупателю" visibility="private"/>
   </packagedElement>
@@ -240,7 +233,7 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dKJ4VmyMEe65l6EfhkxMNw" value="*"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_oc3isGyMEe65l6EfhkxMNw" name="Заказ товара со склада" visibility="public">
+  <packagedElement xmi:type="uml:Class" xmi:id="_oc3isGyMEe65l6EfhkxMNw" name="&lt;Control> Заказ товара со склада" visibility="public">
     <ownedOperation xmi:id="_rhUyMGyMEe65l6EfhkxMNw" name="Добавить товар" visibility="private">
       <ownedParameter xmi:id="_1PZaAGyMEe65l6EfhkxMNw" name="Товар"/>
     </ownedOperation>
@@ -261,23 +254,35 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rMcHVmyMEe65l6EfhkxMNw" value="*"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_6XxCAGyMEe65l6EfhkxMNw" name="Пользователь" visibility="public">
-    <ownedAttribute xmi:id="_FIfZoGyNEe65l6EfhkxMNw" name="Логин" visibility="private">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FIgAsGyNEe65l6EfhkxMNw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FIgAsWyNEe65l6EfhkxMNw" value="1"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_G3EbUGyNEe65l6EfhkxMNw" name="Пароль" visibility="private">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G3FCYGyNEe65l6EfhkxMNw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G3FCYWyNEe65l6EfhkxMNw" value="1"/>
-    </ownedAttribute>
-    <ownedOperation xmi:id="_IB0-QGyNEe65l6EfhkxMNw" name="Вход в систему" visibility="private"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_6XxCAGyMEe65l6EfhkxMNw" name="&lt;Entity> Покупатель" visibility="public">
     <ownedOperation xmi:id="_JlLAUGyNEe65l6EfhkxMNw" name="Забыли пароль" visibility="private"/>
     <ownedOperation xmi:id="_K13zMGyNEe65l6EfhkxMNw" name="Регистрация" visibility="private"/>
+    <ownedOperation xmi:id="_mzjjoHH_Ee6hZaAcAZTZTA" name="Просмотр каталога" visibility="private"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_OH0sIGyNEe65l6EfhkxMNw" name="Забыли пароль" visibility="private"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_TqC-kGyNEe65l6EfhkxMNw" name="Регистрация" visibility="private"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_OH0sIGyNEe65l6EfhkxMNw" name="&lt;Control> Забыли пароль" visibility="private">
+    <ownedOperation xmi:id="_cxt9AHHYEe6dk5_2zlmDiA" name="Смена пароля" visibility="private"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_TqC-kGyNEe65l6EfhkxMNw" name="&lt;Control> Регистрация" visibility="private">
+    <ownedAttribute xmi:id="_kvwKkHHYEe6dk5_2zlmDiA" name="Логин(почта)" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kvxYsHHYEe6dk5_2zlmDiA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kvxYsXHYEe6dk5_2zlmDiA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_nWJlEHHYEe6dk5_2zlmDiA" name="пароль" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nWJlEXHYEe6dk5_2zlmDiA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nWJlEnHYEe6dk5_2zlmDiA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_twgZYHHYEe6dk5_2zlmDiA" name="Подтверждение пароля" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_twgZYXHYEe6dk5_2zlmDiA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_twgZYnHYEe6dk5_2zlmDiA" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_vj8s8HHYEe6dk5_2zlmDiA" name="Добавление нового пользователя в базу данных" visibility="private">
+      <ownedParameter xmi:id="_z0YAUHHYEe6dk5_2zlmDiA" name="Логин" visibility="private"/>
+      <ownedParameter xmi:id="_2f_5EHHYEe6dk5_2zlmDiA" name="Пароль" visibility="private"/>
+    </ownedOperation>
+  </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_WjpB4GyNEe65l6EfhkxMNw" memberEnd="_WjpB4WyNEe65l6EfhkxMNw _WjpB5GyNEe65l6EfhkxMNw" navigableOwnedEnd="_WjpB4WyNEe65l6EfhkxMNw _WjpB5GyNEe65l6EfhkxMNw">
     <ownedEnd xmi:id="_WjpB4WyNEe65l6EfhkxMNw" name="пользовательs" type="_6XxCAGyMEe65l6EfhkxMNw" association="_WjpB4GyNEe65l6EfhkxMNw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WjpB4myNEe65l6EfhkxMNw"/>
@@ -296,6 +301,1102 @@
     <ownedEnd xmi:id="_W1bVdGyNEe65l6EfhkxMNw" name="class14s" type="_TqC-kGyNEe65l6EfhkxMNw" association="_W1bVcGyNEe65l6EfhkxMNw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W1bVdWyNEe65l6EfhkxMNw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W1bVdmyNEe65l6EfhkxMNw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oXWOQHHWEe6dk5_2zlmDiA" name="&lt;Entity> Пользователь" visibility="public">
+    <generalization xmi:id="_D3PYAHJ-Ee69Oo4xPPbEdw" general="_Sg4ecGyKEe65l6EfhkxMNw"/>
+    <generalization xmi:id="_HF8IoHJ-Ee69Oo4xPPbEdw" general="_CAzh4GyLEe65l6EfhkxMNw"/>
+    <generalization xmi:id="_L_w-UHJ-Ee69Oo4xPPbEdw" general="_X1A_oGyMEe65l6EfhkxMNw"/>
+    <generalization xmi:id="_Sfv5gHJ-Ee69Oo4xPPbEdw" general="_6XxCAGyMEe65l6EfhkxMNw"/>
+    <ownedAttribute xmi:id="_u-b3AHHWEe6dk5_2zlmDiA" name="Логин" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_u-ceEHHWEe6dk5_2zlmDiA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_u-ceEXHWEe6dk5_2zlmDiA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wZDa4HHWEe6dk5_2zlmDiA" name="Пароль" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wZDa4XHWEe6dk5_2zlmDiA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wZDa4nHWEe6dk5_2zlmDiA" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_98H-UHHWEe6dk5_2zlmDiA" name="Вход в систему" visibility="private"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_shHgAHHWEe6dk5_2zlmDiA" memberEnd="_shHgAXHWEe6dk5_2zlmDiA _shHgBHHWEe6dk5_2zlmDiA" navigableOwnedEnd="_shHgAXHWEe6dk5_2zlmDiA _shHgBHHWEe6dk5_2zlmDiA">
+    <ownedEnd xmi:id="_shHgAXHWEe6dk5_2zlmDiA" name="персоналs" type="_EhytYGyKEe65l6EfhkxMNw" association="_shHgAHHWEe6dk5_2zlmDiA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_shHgAnHWEe6dk5_2zlmDiA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_shHgA3HWEe6dk5_2zlmDiA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_shHgBHHWEe6dk5_2zlmDiA" name="пользовательs" type="_oXWOQHHWEe6dk5_2zlmDiA" association="_shHgAHHWEe6dk5_2zlmDiA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_shHgBXHWEe6dk5_2zlmDiA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_shHgBnHWEe6dk5_2zlmDiA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JDbC4HHXEe6dk5_2zlmDiA" name="&lt;Entity> Список товаров на складе" visibility="public">
+    <ownedAttribute xmi:id="_N5vRkHHXEe6dk5_2zlmDiA" name="Название товара" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_N5v4oHHXEe6dk5_2zlmDiA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_N5v4oXHXEe6dk5_2zlmDiA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Sc6h0HHXEe6dk5_2zlmDiA" name="Количество" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Sc7I4HHXEe6dk5_2zlmDiA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Sc7I4XHXEe6dk5_2zlmDiA" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_MyNo0HHXEe6dk5_2zlmDiA" memberEnd="_MyNo0XHXEe6dk5_2zlmDiA _MyNo1HHXEe6dk5_2zlmDiA" navigableOwnedEnd="_MyNo0XHXEe6dk5_2zlmDiA _MyNo1HHXEe6dk5_2zlmDiA">
+    <ownedEnd xmi:id="_MyNo0XHXEe6dk5_2zlmDiA" name="составление списка товаровs" type="_v9RD8GyKEe65l6EfhkxMNw" association="_MyNo0HHXEe6dk5_2zlmDiA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MyNo0nHXEe6dk5_2zlmDiA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MyNo03HXEe6dk5_2zlmDiA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_MyNo1HHXEe6dk5_2zlmDiA" name="список товаровs" type="_JDbC4HHXEe6dk5_2zlmDiA" association="_MyNo0HHXEe6dk5_2zlmDiA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MyNo1XHXEe6dk5_2zlmDiA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MyNo1nHXEe6dk5_2zlmDiA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_eCs5MHHXEe6dk5_2zlmDiA" memberEnd="_eCs5MXHXEe6dk5_2zlmDiA _eCs5NHHXEe6dk5_2zlmDiA" navigableOwnedEnd="_eCs5MXHXEe6dk5_2zlmDiA _eCs5NHHXEe6dk5_2zlmDiA">
+    <ownedEnd xmi:id="_eCs5MXHXEe6dk5_2zlmDiA" name="приём товаровs" type="_2zb1EGyLEe65l6EfhkxMNw" association="_eCs5MHHXEe6dk5_2zlmDiA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eCs5MnHXEe6dk5_2zlmDiA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eCs5M3HXEe6dk5_2zlmDiA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_eCs5NHHXEe6dk5_2zlmDiA" name="список товаровs" type="_JDbC4HHXEe6dk5_2zlmDiA" association="_eCs5MHHXEe6dk5_2zlmDiA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eCs5NXHXEe6dk5_2zlmDiA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eCs5NnHXEe6dk5_2zlmDiA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ekQHEHHXEe6dk5_2zlmDiA" memberEnd="_ekQHEXHXEe6dk5_2zlmDiA _ekQHFHHXEe6dk5_2zlmDiA" navigableOwnedEnd="_ekQHEXHXEe6dk5_2zlmDiA _ekQHFHHXEe6dk5_2zlmDiA">
+    <ownedEnd xmi:id="_ekQHEXHXEe6dk5_2zlmDiA" name="отправка товаров в магазинs" type="_5ZeqQGyLEe65l6EfhkxMNw" association="_ekQHEHHXEe6dk5_2zlmDiA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ekQHEnHXEe6dk5_2zlmDiA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ekQHE3HXEe6dk5_2zlmDiA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_ekQHFHHXEe6dk5_2zlmDiA" name="список товаровs" type="_JDbC4HHXEe6dk5_2zlmDiA" association="_ekQHEHHXEe6dk5_2zlmDiA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ekQHFXHXEe6dk5_2zlmDiA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ekQHFnHXEe6dk5_2zlmDiA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_K_gfoHHYEe6dk5_2zlmDiA" memberEnd="_K_gfoXHYEe6dk5_2zlmDiA _K_gfpHHYEe6dk5_2zlmDiA" navigableOwnedEnd="_K_gfoXHYEe6dk5_2zlmDiA _K_gfpHHYEe6dk5_2zlmDiA">
+    <ownedEnd xmi:id="_K_gfoXHYEe6dk5_2zlmDiA" name="составление списка товаровs" type="_v9RD8GyKEe65l6EfhkxMNw" association="_K_gfoHHYEe6dk5_2zlmDiA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K_gfonHYEe6dk5_2zlmDiA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K_gfo3HYEe6dk5_2zlmDiA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_K_gfpHHYEe6dk5_2zlmDiA" name="приём товаровs" type="_2zb1EGyLEe65l6EfhkxMNw" association="_K_gfoHHYEe6dk5_2zlmDiA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K_gfpXHYEe6dk5_2zlmDiA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K_gfpnHYEe6dk5_2zlmDiA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SlLQgHHYEe6dk5_2zlmDiA" memberEnd="_SlLQgXHYEe6dk5_2zlmDiA _SlLQhHHYEe6dk5_2zlmDiA" navigableOwnedEnd="_SlLQgXHYEe6dk5_2zlmDiA _SlLQhHHYEe6dk5_2zlmDiA">
+    <ownedEnd xmi:id="_SlLQgXHYEe6dk5_2zlmDiA" name="заказ товара со складаs" type="_oc3isGyMEe65l6EfhkxMNw" association="_SlLQgHHYEe6dk5_2zlmDiA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SlLQgnHYEe6dk5_2zlmDiA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SlLQg3HYEe6dk5_2zlmDiA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_SlLQhHHYEe6dk5_2zlmDiA" name="отправка товаров в магазинs" type="_5ZeqQGyLEe65l6EfhkxMNw" association="_SlLQgHHYEe6dk5_2zlmDiA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SlLQhXHYEe6dk5_2zlmDiA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SlLQhnHYEe6dk5_2zlmDiA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_1B5G4HHZEe6dk5_2zlmDiA" name="&lt;Control> Отпуск товара покупателю" visibility="public">
+    <ownedAttribute xmi:id="_3tWnkHHZEe6dk5_2zlmDiA" name="Товары" visibility="public">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3tWnkXHZEe6dk5_2zlmDiA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3tWnknHZEe6dk5_2zlmDiA" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="__Qg3AHHZEe6dk5_2zlmDiA" memberEnd="__Qg3AXHZEe6dk5_2zlmDiA __Qg3BHHZEe6dk5_2zlmDiA" navigableOwnedEnd="__Qg3AXHZEe6dk5_2zlmDiA __Qg3BHHZEe6dk5_2zlmDiA">
+    <ownedEnd xmi:id="__Qg3AXHZEe6dk5_2zlmDiA" name="продавецs" type="_X1A_oGyMEe65l6EfhkxMNw" association="__Qg3AHHZEe6dk5_2zlmDiA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__Qg3AnHZEe6dk5_2zlmDiA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__Qg3A3HZEe6dk5_2zlmDiA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="__Qg3BHHZEe6dk5_2zlmDiA" name="отпуск товара покупателюs" type="_1B5G4HHZEe6dk5_2zlmDiA" association="__Qg3AHHZEe6dk5_2zlmDiA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__Qg3BXHZEe6dk5_2zlmDiA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__Qg3BnHZEe6dk5_2zlmDiA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_B8gjMHHaEe6dk5_2zlmDiA" name="&lt;Boundary> Каталог товаров" visibility="public">
+    <ownedAttribute xmi:id="_7O8CgHHaEe6dk5_2zlmDiA" name="Название товара" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7O8CgXHaEe6dk5_2zlmDiA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7O8pkHHaEe6dk5_2zlmDiA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_IMZXcHHbEe6dk5_2zlmDiA" name="Количество" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IMZXcXHbEe6dk5_2zlmDiA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IMZXcnHbEe6dk5_2zlmDiA" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_vtr68HHcEe6dk5_2zlmDiA" name="Вход в систему" node="_KrQNcHIFEe6hZaAcAZTZTA _OZA4oHIFEe6hZaAcAZTZTA _RSm78HIFEe6hZaAcAZTZTA">
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_zo2MUHIFEe6hZaAcAZTZTA" name="Вход в систему" node="_zo2MV3IFEe6hZaAcAZTZTA _zo2MWHIFEe6hZaAcAZTZTA _zo2MWXIFEe6hZaAcAZTZTA">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_zo2MUXIFEe6hZaAcAZTZTA" target="_zo2MWHIFEe6hZaAcAZTZTA" source="_zo2MV3IFEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_zo2MUnIFEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_zo2MU3IFEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_zo2MVHIFEe6hZaAcAZTZTA" target="_zo2MWXIFEe6hZaAcAZTZTA" source="_zo2MWHIFEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_zo2MVXIFEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_zo2MVnIFEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+      </edge>
+      <node xmi:type="uml:InitialNode" xmi:id="_zo2MV3IFEe6hZaAcAZTZTA" name="" outgoing="_zo2MUXIFEe6hZaAcAZTZTA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_zo2MWHIFEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_zo2MUXIFEe6hZaAcAZTZTA" outgoing="_zo2MVHIFEe6hZaAcAZTZTA">
+        <body>// TODO body of OpaqueAction1</body>
+      </node>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_zo2MWXIFEe6hZaAcAZTZTA" name="" incoming="_zo2MVHIFEe6hZaAcAZTZTA"/>
+    </ownedBehavior>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_0SqlYHIFEe6hZaAcAZTZTA" name="Вход в систему" node="_0SqlZ3IFEe6hZaAcAZTZTA _0SqlaHIFEe6hZaAcAZTZTA _0SqlaXIFEe6hZaAcAZTZTA">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_0SqlYXIFEe6hZaAcAZTZTA" target="_0SqlaHIFEe6hZaAcAZTZTA" source="_0SqlZ3IFEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_0SqlYnIFEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_0SqlY3IFEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_0SqlZHIFEe6hZaAcAZTZTA" target="_0SqlaXIFEe6hZaAcAZTZTA" source="_0SqlaHIFEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_0SqlZXIFEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_0SqlZnIFEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+      </edge>
+      <node xmi:type="uml:InitialNode" xmi:id="_0SqlZ3IFEe6hZaAcAZTZTA" name="" outgoing="_0SqlYXIFEe6hZaAcAZTZTA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_0SqlaHIFEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_0SqlYXIFEe6hZaAcAZTZTA" outgoing="_0SqlZHIFEe6hZaAcAZTZTA">
+        <body>// TODO body of OpaqueAction1</body>
+      </node>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_0SqlaXIFEe6hZaAcAZTZTA" name="" incoming="_0SqlZHIFEe6hZaAcAZTZTA"/>
+    </ownedBehavior>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_1tqjwHIFEe6hZaAcAZTZTA" name="Вход в систему" node="_1tqj23IFEe6hZaAcAZTZTA _1tqj3HIFEe6hZaAcAZTZTA _1tqj3XIFEe6hZaAcAZTZTA">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_1tqjwXIFEe6hZaAcAZTZTA" name="Вход в систему" node="_1tqjyHIFEe6hZaAcAZTZTA _1tqjyXIFEe6hZaAcAZTZTA _1tqjynIFEe6hZaAcAZTZTA">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_1tqjwnIFEe6hZaAcAZTZTA" target="_1tqjyXIFEe6hZaAcAZTZTA" source="_1tqjyHIFEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_1tqjw3IFEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_1tqjxHIFEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_1tqjxXIFEe6hZaAcAZTZTA" target="_1tqjynIFEe6hZaAcAZTZTA" source="_1tqjyXIFEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_1tqjxnIFEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_1tqjx3IFEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+        </edge>
+        <node xmi:type="uml:InitialNode" xmi:id="_1tqjyHIFEe6hZaAcAZTZTA" name="" outgoing="_1tqjwnIFEe6hZaAcAZTZTA"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_1tqjyXIFEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_1tqjwnIFEe6hZaAcAZTZTA" outgoing="_1tqjxXIFEe6hZaAcAZTZTA">
+          <body>// TODO body of OpaqueAction1</body>
+        </node>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_1tqjynIFEe6hZaAcAZTZTA" name="" incoming="_1tqjxXIFEe6hZaAcAZTZTA"/>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_1tqjy3IFEe6hZaAcAZTZTA" name="Вход в систему" node="_1tqj0nIFEe6hZaAcAZTZTA _1tqj03IFEe6hZaAcAZTZTA _1tqj1HIFEe6hZaAcAZTZTA">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_1tqjzHIFEe6hZaAcAZTZTA" target="_1tqj03IFEe6hZaAcAZTZTA" source="_1tqj0nIFEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_1tqjzXIFEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_1tqjznIFEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_1tqjz3IFEe6hZaAcAZTZTA" target="_1tqj1HIFEe6hZaAcAZTZTA" source="_1tqj03IFEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_1tqj0HIFEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_1tqj0XIFEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+        </edge>
+        <node xmi:type="uml:InitialNode" xmi:id="_1tqj0nIFEe6hZaAcAZTZTA" name="" outgoing="_1tqjzHIFEe6hZaAcAZTZTA"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_1tqj03IFEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_1tqjzHIFEe6hZaAcAZTZTA" outgoing="_1tqjz3IFEe6hZaAcAZTZTA">
+          <body>// TODO body of OpaqueAction1</body>
+        </node>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_1tqj1HIFEe6hZaAcAZTZTA" name="" incoming="_1tqjz3IFEe6hZaAcAZTZTA"/>
+      </ownedBehavior>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_1tqj1XIFEe6hZaAcAZTZTA" target="_1tqj3HIFEe6hZaAcAZTZTA" source="_1tqj23IFEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_1tqj1nIFEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_1tqj13IFEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_1tqj2HIFEe6hZaAcAZTZTA" target="_1tqj3XIFEe6hZaAcAZTZTA" source="_1tqj3HIFEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_1tqj2XIFEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_1tqj2nIFEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+      </edge>
+      <node xmi:type="uml:InitialNode" xmi:id="_1tqj23IFEe6hZaAcAZTZTA" name="" outgoing="_1tqj1XIFEe6hZaAcAZTZTA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_1tqj3HIFEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_1tqj1XIFEe6hZaAcAZTZTA" outgoing="_1tqj2HIFEe6hZaAcAZTZTA">
+        <body>// TODO body of OpaqueAction1</body>
+      </node>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_1tqj3XIFEe6hZaAcAZTZTA" name="" incoming="_1tqj2HIFEe6hZaAcAZTZTA"/>
+    </ownedBehavior>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_8UCa0HIFEe6hZaAcAZTZTA" name="Вход в систему" node="_8UCa63IFEe6hZaAcAZTZTA _8UCa7HIFEe6hZaAcAZTZTA _8UCa7XIFEe6hZaAcAZTZTA">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_8UCa0XIFEe6hZaAcAZTZTA" name="Вход в систему" node="_8UCa2HIFEe6hZaAcAZTZTA _8UCa2XIFEe6hZaAcAZTZTA _8UCa2nIFEe6hZaAcAZTZTA">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_8UCa0nIFEe6hZaAcAZTZTA" target="_8UCa2XIFEe6hZaAcAZTZTA" source="_8UCa2HIFEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_8UCa03IFEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_8UCa1HIFEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_8UCa1XIFEe6hZaAcAZTZTA" target="_8UCa2nIFEe6hZaAcAZTZTA" source="_8UCa2XIFEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_8UCa1nIFEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_8UCa13IFEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+        </edge>
+        <node xmi:type="uml:InitialNode" xmi:id="_8UCa2HIFEe6hZaAcAZTZTA" name="" outgoing="_8UCa0nIFEe6hZaAcAZTZTA"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_8UCa2XIFEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_8UCa0nIFEe6hZaAcAZTZTA" outgoing="_8UCa1XIFEe6hZaAcAZTZTA">
+          <body>// TODO body of OpaqueAction1</body>
+        </node>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_8UCa2nIFEe6hZaAcAZTZTA" name="" incoming="_8UCa1XIFEe6hZaAcAZTZTA"/>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_8UCa23IFEe6hZaAcAZTZTA" name="Вход в систему" node="_8UCa4nIFEe6hZaAcAZTZTA _8UCa43IFEe6hZaAcAZTZTA _8UCa5HIFEe6hZaAcAZTZTA">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_8UCa3HIFEe6hZaAcAZTZTA" target="_8UCa43IFEe6hZaAcAZTZTA" source="_8UCa4nIFEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_8UCa3XIFEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_8UCa3nIFEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_8UCa33IFEe6hZaAcAZTZTA" target="_8UCa5HIFEe6hZaAcAZTZTA" source="_8UCa43IFEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_8UCa4HIFEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_8UCa4XIFEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+        </edge>
+        <node xmi:type="uml:InitialNode" xmi:id="_8UCa4nIFEe6hZaAcAZTZTA" name="" outgoing="_8UCa3HIFEe6hZaAcAZTZTA"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_8UCa43IFEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_8UCa3HIFEe6hZaAcAZTZTA" outgoing="_8UCa33IFEe6hZaAcAZTZTA">
+          <body>// TODO body of OpaqueAction1</body>
+        </node>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_8UCa5HIFEe6hZaAcAZTZTA" name="" incoming="_8UCa33IFEe6hZaAcAZTZTA"/>
+      </ownedBehavior>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_8UCa5XIFEe6hZaAcAZTZTA" target="_8UCa7HIFEe6hZaAcAZTZTA" source="_8UCa63IFEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_8UCa5nIFEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_8UCa53IFEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_8UCa6HIFEe6hZaAcAZTZTA" target="_8UCa7XIFEe6hZaAcAZTZTA" source="_8UCa7HIFEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_8UCa6XIFEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_8UCa6nIFEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+      </edge>
+      <node xmi:type="uml:InitialNode" xmi:id="_8UCa63IFEe6hZaAcAZTZTA" name="" outgoing="_8UCa5XIFEe6hZaAcAZTZTA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_8UCa7HIFEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_8UCa5XIFEe6hZaAcAZTZTA" outgoing="_8UCa6HIFEe6hZaAcAZTZTA">
+        <body>// TODO body of OpaqueAction1</body>
+      </node>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_8UCa7XIFEe6hZaAcAZTZTA" name="" incoming="_8UCa6HIFEe6hZaAcAZTZTA"/>
+    </ownedBehavior>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_vbdwcHIGEe6hZaAcAZTZTA" name="NewModel"/>
+    <ownedParameter xmi:id="_-7tnsHIFEe6hZaAcAZTZTA" name="Parameter1"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Qp8ZcHIFEe6hZaAcAZTZTA" target="_OZA4oHIFEe6hZaAcAZTZTA" source="_KrQNcHIFEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_Qp9AgHIFEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Qp9nkHIFEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_SVvM4HIFEe6hZaAcAZTZTA" target="_RSm78HIFEe6hZaAcAZTZTA" source="_OZA4oHIFEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_SVvz8HIFEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_SVvz8XIFEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+    </edge>
+    <node xmi:type="uml:InitialNode" xmi:id="_KrQNcHIFEe6hZaAcAZTZTA" name="" outgoing="_Qp8ZcHIFEe6hZaAcAZTZTA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_OZA4oHIFEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_Qp8ZcHIFEe6hZaAcAZTZTA" outgoing="_SVvM4HIFEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction1</body>
+    </node>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_RSm78HIFEe6hZaAcAZTZTA" name="" incoming="_SVvM4HIFEe6hZaAcAZTZTA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_sA_44HH_Ee6hZaAcAZTZTA" memberEnd="_sA_44XH_Ee6hZaAcAZTZTA _sA_45HH_Ee6hZaAcAZTZTA" navigableOwnedEnd="_sA_44XH_Ee6hZaAcAZTZTA _sA_45HH_Ee6hZaAcAZTZTA">
+    <ownedEnd xmi:id="_sA_44XH_Ee6hZaAcAZTZTA" name="покупательs" type="_6XxCAGyMEe65l6EfhkxMNw" association="_sA_44HH_Ee6hZaAcAZTZTA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sA_44nH_Ee6hZaAcAZTZTA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sA_443H_Ee6hZaAcAZTZTA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_sA_45HH_Ee6hZaAcAZTZTA" name="каталог товаровs" type="_B8gjMHHaEe6dk5_2zlmDiA" association="_sA_44HH_Ee6hZaAcAZTZTA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sA_45XH_Ee6hZaAcAZTZTA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sA_45nH_Ee6hZaAcAZTZTA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_saog4HH_Ee6hZaAcAZTZTA" memberEnd="_saog4XH_Ee6hZaAcAZTZTA _saog5HH_Ee6hZaAcAZTZTA" navigableOwnedEnd="_saog4XH_Ee6hZaAcAZTZTA _saog5HH_Ee6hZaAcAZTZTA">
+    <ownedEnd xmi:id="_saog4XH_Ee6hZaAcAZTZTA" name="каталог товаровs" type="_B8gjMHHaEe6dk5_2zlmDiA" association="_saog4HH_Ee6hZaAcAZTZTA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_saog4nH_Ee6hZaAcAZTZTA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_saog43H_Ee6hZaAcAZTZTA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_saog5HH_Ee6hZaAcAZTZTA" name="отпуск товара покупателюs" type="_1B5G4HHZEe6dk5_2zlmDiA" association="_saog4HH_Ee6hZaAcAZTZTA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_saog5XH_Ee6hZaAcAZTZTA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_saog5nH_Ee6hZaAcAZTZTA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_URf5gHIGEe6hZaAcAZTZTA" name="Вход в систему" node="_URf52HIGEe6hZaAcAZTZTA _URf52XIGEe6hZaAcAZTZTA _URf52nIGEe6hZaAcAZTZTA">
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_URf5gXIGEe6hZaAcAZTZTA" name="Вход в систему" node="_URf5iHIGEe6hZaAcAZTZTA _URf5iXIGEe6hZaAcAZTZTA _URf5inIGEe6hZaAcAZTZTA">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_URf5gnIGEe6hZaAcAZTZTA" target="_URf5iXIGEe6hZaAcAZTZTA" source="_URf5iHIGEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_URf5g3IGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_URf5hHIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_URf5hXIGEe6hZaAcAZTZTA" target="_URf5inIGEe6hZaAcAZTZTA" source="_URf5iXIGEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_URf5hnIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_URf5h3IGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+      </edge>
+      <node xmi:type="uml:InitialNode" xmi:id="_URf5iHIGEe6hZaAcAZTZTA" name="" outgoing="_URf5gnIGEe6hZaAcAZTZTA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_URf5iXIGEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_URf5gnIGEe6hZaAcAZTZTA" outgoing="_URf5hXIGEe6hZaAcAZTZTA">
+        <body>// TODO body of OpaqueAction1</body>
+      </node>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_URf5inIGEe6hZaAcAZTZTA" name="" incoming="_URf5hXIGEe6hZaAcAZTZTA"/>
+    </ownedBehavior>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_URf5i3IGEe6hZaAcAZTZTA" name="Вход в систему" node="_URf5knIGEe6hZaAcAZTZTA _URf5k3IGEe6hZaAcAZTZTA _URf5lHIGEe6hZaAcAZTZTA">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_URf5jHIGEe6hZaAcAZTZTA" target="_URf5k3IGEe6hZaAcAZTZTA" source="_URf5knIGEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_URf5jXIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_URf5jnIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_URf5j3IGEe6hZaAcAZTZTA" target="_URf5lHIGEe6hZaAcAZTZTA" source="_URf5k3IGEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_URf5kHIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_URf5kXIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+      </edge>
+      <node xmi:type="uml:InitialNode" xmi:id="_URf5knIGEe6hZaAcAZTZTA" name="" outgoing="_URf5jHIGEe6hZaAcAZTZTA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_URf5k3IGEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_URf5jHIGEe6hZaAcAZTZTA" outgoing="_URf5j3IGEe6hZaAcAZTZTA">
+        <body>// TODO body of OpaqueAction1</body>
+      </node>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_URf5lHIGEe6hZaAcAZTZTA" name="" incoming="_URf5j3IGEe6hZaAcAZTZTA"/>
+    </ownedBehavior>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_URf5lXIGEe6hZaAcAZTZTA" name="Вход в систему" node="_URf5sHIGEe6hZaAcAZTZTA _URf5sXIGEe6hZaAcAZTZTA _URf5snIGEe6hZaAcAZTZTA">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_URf5lnIGEe6hZaAcAZTZTA" name="Вход в систему" node="_URf5nXIGEe6hZaAcAZTZTA _URf5nnIGEe6hZaAcAZTZTA _URf5n3IGEe6hZaAcAZTZTA">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_URf5l3IGEe6hZaAcAZTZTA" target="_URf5nnIGEe6hZaAcAZTZTA" source="_URf5nXIGEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_URf5mHIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_URf5mXIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_URf5mnIGEe6hZaAcAZTZTA" target="_URf5n3IGEe6hZaAcAZTZTA" source="_URf5nnIGEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_URf5m3IGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_URf5nHIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+        </edge>
+        <node xmi:type="uml:InitialNode" xmi:id="_URf5nXIGEe6hZaAcAZTZTA" name="" outgoing="_URf5l3IGEe6hZaAcAZTZTA"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_URf5nnIGEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_URf5l3IGEe6hZaAcAZTZTA" outgoing="_URf5mnIGEe6hZaAcAZTZTA">
+          <body>// TODO body of OpaqueAction1</body>
+        </node>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_URf5n3IGEe6hZaAcAZTZTA" name="" incoming="_URf5mnIGEe6hZaAcAZTZTA"/>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_URf5oHIGEe6hZaAcAZTZTA" name="Вход в систему" node="_URf5p3IGEe6hZaAcAZTZTA _URf5qHIGEe6hZaAcAZTZTA _URf5qXIGEe6hZaAcAZTZTA">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_URf5oXIGEe6hZaAcAZTZTA" target="_URf5qHIGEe6hZaAcAZTZTA" source="_URf5p3IGEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_URf5onIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_URf5o3IGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_URf5pHIGEe6hZaAcAZTZTA" target="_URf5qXIGEe6hZaAcAZTZTA" source="_URf5qHIGEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_URf5pXIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_URf5pnIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+        </edge>
+        <node xmi:type="uml:InitialNode" xmi:id="_URf5p3IGEe6hZaAcAZTZTA" name="" outgoing="_URf5oXIGEe6hZaAcAZTZTA"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_URf5qHIGEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_URf5oXIGEe6hZaAcAZTZTA" outgoing="_URf5pHIGEe6hZaAcAZTZTA">
+          <body>// TODO body of OpaqueAction1</body>
+        </node>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_URf5qXIGEe6hZaAcAZTZTA" name="" incoming="_URf5pHIGEe6hZaAcAZTZTA"/>
+      </ownedBehavior>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_URf5qnIGEe6hZaAcAZTZTA" target="_URf5sXIGEe6hZaAcAZTZTA" source="_URf5sHIGEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_URf5q3IGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_URf5rHIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_URf5rXIGEe6hZaAcAZTZTA" target="_URf5snIGEe6hZaAcAZTZTA" source="_URf5sXIGEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_URf5rnIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_URf5r3IGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+      </edge>
+      <node xmi:type="uml:InitialNode" xmi:id="_URf5sHIGEe6hZaAcAZTZTA" name="" outgoing="_URf5qnIGEe6hZaAcAZTZTA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_URf5sXIGEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_URf5qnIGEe6hZaAcAZTZTA" outgoing="_URf5rXIGEe6hZaAcAZTZTA">
+        <body>// TODO body of OpaqueAction1</body>
+      </node>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_URf5snIGEe6hZaAcAZTZTA" name="" incoming="_URf5rXIGEe6hZaAcAZTZTA"/>
+    </ownedBehavior>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_URf5s3IGEe6hZaAcAZTZTA" name="Вход в систему" node="_URf5znIGEe6hZaAcAZTZTA _URf5z3IGEe6hZaAcAZTZTA _URf50HIGEe6hZaAcAZTZTA">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_URf5tHIGEe6hZaAcAZTZTA" name="Вход в систему" node="_URf5u3IGEe6hZaAcAZTZTA _URf5vHIGEe6hZaAcAZTZTA _URf5vXIGEe6hZaAcAZTZTA">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_URf5tXIGEe6hZaAcAZTZTA" target="_URf5vHIGEe6hZaAcAZTZTA" source="_URf5u3IGEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_URf5tnIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_URf5t3IGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_URf5uHIGEe6hZaAcAZTZTA" target="_URf5vXIGEe6hZaAcAZTZTA" source="_URf5vHIGEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_URf5uXIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_URf5unIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+        </edge>
+        <node xmi:type="uml:InitialNode" xmi:id="_URf5u3IGEe6hZaAcAZTZTA" name="" outgoing="_URf5tXIGEe6hZaAcAZTZTA"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_URf5vHIGEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_URf5tXIGEe6hZaAcAZTZTA" outgoing="_URf5uHIGEe6hZaAcAZTZTA">
+          <body>// TODO body of OpaqueAction1</body>
+        </node>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_URf5vXIGEe6hZaAcAZTZTA" name="" incoming="_URf5uHIGEe6hZaAcAZTZTA"/>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_URf5vnIGEe6hZaAcAZTZTA" name="Вход в систему" node="_URf5xXIGEe6hZaAcAZTZTA _URf5xnIGEe6hZaAcAZTZTA _URf5x3IGEe6hZaAcAZTZTA">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_URf5v3IGEe6hZaAcAZTZTA" target="_URf5xnIGEe6hZaAcAZTZTA" source="_URf5xXIGEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_URf5wHIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_URf5wXIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_URf5wnIGEe6hZaAcAZTZTA" target="_URf5x3IGEe6hZaAcAZTZTA" source="_URf5xnIGEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_URf5w3IGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_URf5xHIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+        </edge>
+        <node xmi:type="uml:InitialNode" xmi:id="_URf5xXIGEe6hZaAcAZTZTA" name="" outgoing="_URf5v3IGEe6hZaAcAZTZTA"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_URf5xnIGEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_URf5v3IGEe6hZaAcAZTZTA" outgoing="_URf5wnIGEe6hZaAcAZTZTA">
+          <body>// TODO body of OpaqueAction1</body>
+        </node>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_URf5x3IGEe6hZaAcAZTZTA" name="" incoming="_URf5wnIGEe6hZaAcAZTZTA"/>
+      </ownedBehavior>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_URf5yHIGEe6hZaAcAZTZTA" target="_URf5z3IGEe6hZaAcAZTZTA" source="_URf5znIGEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_URf5yXIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_URf5ynIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_URf5y3IGEe6hZaAcAZTZTA" target="_URf50HIGEe6hZaAcAZTZTA" source="_URf5z3IGEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_URf5zHIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_URf5zXIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+      </edge>
+      <node xmi:type="uml:InitialNode" xmi:id="_URf5znIGEe6hZaAcAZTZTA" name="" outgoing="_URf5yHIGEe6hZaAcAZTZTA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_URf5z3IGEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_URf5yHIGEe6hZaAcAZTZTA" outgoing="_URf5y3IGEe6hZaAcAZTZTA">
+        <body>// TODO body of OpaqueAction1</body>
+      </node>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_URf50HIGEe6hZaAcAZTZTA" name="" incoming="_URf5y3IGEe6hZaAcAZTZTA"/>
+    </ownedBehavior>
+    <ownedParameter xmi:id="_URf50XIGEe6hZaAcAZTZTA" name="Parameter1"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_URf50nIGEe6hZaAcAZTZTA" target="_URf52XIGEe6hZaAcAZTZTA" source="_URf52HIGEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_URf503IGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_URf51HIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_URf51XIGEe6hZaAcAZTZTA" target="_URf52nIGEe6hZaAcAZTZTA" source="_URf52XIGEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_URf51nIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_URf513IGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+    </edge>
+    <node xmi:type="uml:InitialNode" xmi:id="_URf52HIGEe6hZaAcAZTZTA" name="" outgoing="_URf50nIGEe6hZaAcAZTZTA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_URf52XIGEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_URf50nIGEe6hZaAcAZTZTA" outgoing="_URf51XIGEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction1</body>
+    </node>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_URf52nIGEe6hZaAcAZTZTA" name="" incoming="_URf51XIGEe6hZaAcAZTZTA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_ZfHN4HIGEe6hZaAcAZTZTA" name="Вход в систему" node="_ZfHOOHIGEe6hZaAcAZTZTA _ZfHOOXIGEe6hZaAcAZTZTA _ZfHOOnIGEe6hZaAcAZTZTA">
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_ZfHN4XIGEe6hZaAcAZTZTA" name="Вход в систему" node="_ZfHN6HIGEe6hZaAcAZTZTA _ZfHN6XIGEe6hZaAcAZTZTA _ZfHN6nIGEe6hZaAcAZTZTA">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ZfHN4nIGEe6hZaAcAZTZTA" target="_ZfHN6XIGEe6hZaAcAZTZTA" source="_ZfHN6HIGEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_ZfHN43IGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ZfHN5HIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ZfHN5XIGEe6hZaAcAZTZTA" target="_ZfHN6nIGEe6hZaAcAZTZTA" source="_ZfHN6XIGEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_ZfHN5nIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ZfHN53IGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+      </edge>
+      <node xmi:type="uml:InitialNode" xmi:id="_ZfHN6HIGEe6hZaAcAZTZTA" name="" outgoing="_ZfHN4nIGEe6hZaAcAZTZTA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ZfHN6XIGEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_ZfHN4nIGEe6hZaAcAZTZTA" outgoing="_ZfHN5XIGEe6hZaAcAZTZTA">
+        <body>// TODO body of OpaqueAction1</body>
+      </node>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_ZfHN6nIGEe6hZaAcAZTZTA" name="" incoming="_ZfHN5XIGEe6hZaAcAZTZTA"/>
+    </ownedBehavior>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_ZfHN63IGEe6hZaAcAZTZTA" name="Вход в систему" node="_ZfHN8nIGEe6hZaAcAZTZTA _ZfHN83IGEe6hZaAcAZTZTA _ZfHN9HIGEe6hZaAcAZTZTA">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ZfHN7HIGEe6hZaAcAZTZTA" target="_ZfHN83IGEe6hZaAcAZTZTA" source="_ZfHN8nIGEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_ZfHN7XIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ZfHN7nIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ZfHN73IGEe6hZaAcAZTZTA" target="_ZfHN9HIGEe6hZaAcAZTZTA" source="_ZfHN83IGEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_ZfHN8HIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ZfHN8XIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+      </edge>
+      <node xmi:type="uml:InitialNode" xmi:id="_ZfHN8nIGEe6hZaAcAZTZTA" name="" outgoing="_ZfHN7HIGEe6hZaAcAZTZTA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ZfHN83IGEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_ZfHN7HIGEe6hZaAcAZTZTA" outgoing="_ZfHN73IGEe6hZaAcAZTZTA">
+        <body>// TODO body of OpaqueAction1</body>
+      </node>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_ZfHN9HIGEe6hZaAcAZTZTA" name="" incoming="_ZfHN73IGEe6hZaAcAZTZTA"/>
+    </ownedBehavior>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_ZfHN9XIGEe6hZaAcAZTZTA" name="Вход в систему" node="_ZfHOEHIGEe6hZaAcAZTZTA _ZfHOEXIGEe6hZaAcAZTZTA _ZfHOEnIGEe6hZaAcAZTZTA">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_ZfHN9nIGEe6hZaAcAZTZTA" name="Вход в систему" node="_ZfHN_XIGEe6hZaAcAZTZTA _ZfHN_nIGEe6hZaAcAZTZTA _ZfHN_3IGEe6hZaAcAZTZTA">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_ZfHN93IGEe6hZaAcAZTZTA" target="_ZfHN_nIGEe6hZaAcAZTZTA" source="_ZfHN_XIGEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_ZfHN-HIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_ZfHN-XIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_ZfHN-nIGEe6hZaAcAZTZTA" target="_ZfHN_3IGEe6hZaAcAZTZTA" source="_ZfHN_nIGEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_ZfHN-3IGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_ZfHN_HIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+        </edge>
+        <node xmi:type="uml:InitialNode" xmi:id="_ZfHN_XIGEe6hZaAcAZTZTA" name="" outgoing="_ZfHN93IGEe6hZaAcAZTZTA"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_ZfHN_nIGEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_ZfHN93IGEe6hZaAcAZTZTA" outgoing="_ZfHN-nIGEe6hZaAcAZTZTA">
+          <body>// TODO body of OpaqueAction1</body>
+        </node>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_ZfHN_3IGEe6hZaAcAZTZTA" name="" incoming="_ZfHN-nIGEe6hZaAcAZTZTA"/>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_ZfHOAHIGEe6hZaAcAZTZTA" name="Вход в систему" node="_ZfHOB3IGEe6hZaAcAZTZTA _ZfHOCHIGEe6hZaAcAZTZTA _ZfHOCXIGEe6hZaAcAZTZTA">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_ZfHOAXIGEe6hZaAcAZTZTA" target="_ZfHOCHIGEe6hZaAcAZTZTA" source="_ZfHOB3IGEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_ZfHOAnIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_ZfHOA3IGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_ZfHOBHIGEe6hZaAcAZTZTA" target="_ZfHOCXIGEe6hZaAcAZTZTA" source="_ZfHOCHIGEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_ZfHOBXIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_ZfHOBnIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+        </edge>
+        <node xmi:type="uml:InitialNode" xmi:id="_ZfHOB3IGEe6hZaAcAZTZTA" name="" outgoing="_ZfHOAXIGEe6hZaAcAZTZTA"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_ZfHOCHIGEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_ZfHOAXIGEe6hZaAcAZTZTA" outgoing="_ZfHOBHIGEe6hZaAcAZTZTA">
+          <body>// TODO body of OpaqueAction1</body>
+        </node>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_ZfHOCXIGEe6hZaAcAZTZTA" name="" incoming="_ZfHOBHIGEe6hZaAcAZTZTA"/>
+      </ownedBehavior>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ZfHOCnIGEe6hZaAcAZTZTA" target="_ZfHOEXIGEe6hZaAcAZTZTA" source="_ZfHOEHIGEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_ZfHOC3IGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ZfHODHIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ZfHODXIGEe6hZaAcAZTZTA" target="_ZfHOEnIGEe6hZaAcAZTZTA" source="_ZfHOEXIGEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_ZfHODnIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ZfHOD3IGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+      </edge>
+      <node xmi:type="uml:InitialNode" xmi:id="_ZfHOEHIGEe6hZaAcAZTZTA" name="" outgoing="_ZfHOCnIGEe6hZaAcAZTZTA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ZfHOEXIGEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_ZfHOCnIGEe6hZaAcAZTZTA" outgoing="_ZfHODXIGEe6hZaAcAZTZTA">
+        <body>// TODO body of OpaqueAction1</body>
+      </node>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_ZfHOEnIGEe6hZaAcAZTZTA" name="" incoming="_ZfHODXIGEe6hZaAcAZTZTA"/>
+    </ownedBehavior>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_ZfHOE3IGEe6hZaAcAZTZTA" name="Вход в систему" node="_ZfHOLnIGEe6hZaAcAZTZTA _ZfHOL3IGEe6hZaAcAZTZTA _ZfHOMHIGEe6hZaAcAZTZTA">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_ZfHOFHIGEe6hZaAcAZTZTA" name="Вход в систему" node="_ZfHOG3IGEe6hZaAcAZTZTA _ZfHOHHIGEe6hZaAcAZTZTA _ZfHOHXIGEe6hZaAcAZTZTA">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_ZfHOFXIGEe6hZaAcAZTZTA" target="_ZfHOHHIGEe6hZaAcAZTZTA" source="_ZfHOG3IGEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_ZfHOFnIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_ZfHOF3IGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_ZfHOGHIGEe6hZaAcAZTZTA" target="_ZfHOHXIGEe6hZaAcAZTZTA" source="_ZfHOHHIGEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_ZfHOGXIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_ZfHOGnIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+        </edge>
+        <node xmi:type="uml:InitialNode" xmi:id="_ZfHOG3IGEe6hZaAcAZTZTA" name="" outgoing="_ZfHOFXIGEe6hZaAcAZTZTA"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_ZfHOHHIGEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_ZfHOFXIGEe6hZaAcAZTZTA" outgoing="_ZfHOGHIGEe6hZaAcAZTZTA">
+          <body>// TODO body of OpaqueAction1</body>
+        </node>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_ZfHOHXIGEe6hZaAcAZTZTA" name="" incoming="_ZfHOGHIGEe6hZaAcAZTZTA"/>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_ZfHOHnIGEe6hZaAcAZTZTA" name="Вход в систему" node="_ZfHOJXIGEe6hZaAcAZTZTA _ZfHOJnIGEe6hZaAcAZTZTA _ZfHOJ3IGEe6hZaAcAZTZTA">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_ZfHOH3IGEe6hZaAcAZTZTA" target="_ZfHOJnIGEe6hZaAcAZTZTA" source="_ZfHOJXIGEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_ZfHOIHIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_ZfHOIXIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_ZfHOInIGEe6hZaAcAZTZTA" target="_ZfHOJ3IGEe6hZaAcAZTZTA" source="_ZfHOJnIGEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_ZfHOI3IGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_ZfHOJHIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+        </edge>
+        <node xmi:type="uml:InitialNode" xmi:id="_ZfHOJXIGEe6hZaAcAZTZTA" name="" outgoing="_ZfHOH3IGEe6hZaAcAZTZTA"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_ZfHOJnIGEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_ZfHOH3IGEe6hZaAcAZTZTA" outgoing="_ZfHOInIGEe6hZaAcAZTZTA">
+          <body>// TODO body of OpaqueAction1</body>
+        </node>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_ZfHOJ3IGEe6hZaAcAZTZTA" name="" incoming="_ZfHOInIGEe6hZaAcAZTZTA"/>
+      </ownedBehavior>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ZfHOKHIGEe6hZaAcAZTZTA" target="_ZfHOL3IGEe6hZaAcAZTZTA" source="_ZfHOLnIGEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_ZfHOKXIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ZfHOKnIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ZfHOK3IGEe6hZaAcAZTZTA" target="_ZfHOMHIGEe6hZaAcAZTZTA" source="_ZfHOL3IGEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_ZfHOLHIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ZfHOLXIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+      </edge>
+      <node xmi:type="uml:InitialNode" xmi:id="_ZfHOLnIGEe6hZaAcAZTZTA" name="" outgoing="_ZfHOKHIGEe6hZaAcAZTZTA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ZfHOL3IGEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_ZfHOKHIGEe6hZaAcAZTZTA" outgoing="_ZfHOK3IGEe6hZaAcAZTZTA">
+        <body>// TODO body of OpaqueAction1</body>
+      </node>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_ZfHOMHIGEe6hZaAcAZTZTA" name="" incoming="_ZfHOK3IGEe6hZaAcAZTZTA"/>
+    </ownedBehavior>
+    <ownedParameter xmi:id="_ZfHOMXIGEe6hZaAcAZTZTA" name="Parameter1"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ZfHOMnIGEe6hZaAcAZTZTA" target="_ZfHOOXIGEe6hZaAcAZTZTA" source="_ZfHOOHIGEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_ZfHOM3IGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_ZfHONHIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ZfHONXIGEe6hZaAcAZTZTA" target="_ZfHOOnIGEe6hZaAcAZTZTA" source="_ZfHOOXIGEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_ZfHONnIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_ZfHON3IGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+    </edge>
+    <node xmi:type="uml:InitialNode" xmi:id="_ZfHOOHIGEe6hZaAcAZTZTA" name="" outgoing="_ZfHOMnIGEe6hZaAcAZTZTA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ZfHOOXIGEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_ZfHOMnIGEe6hZaAcAZTZTA" outgoing="_ZfHONXIGEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction1</body>
+    </node>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_ZfHOOnIGEe6hZaAcAZTZTA" name="" incoming="_ZfHONXIGEe6hZaAcAZTZTA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_Z0vfoHIGEe6hZaAcAZTZTA" name="Вход в систему" node="_Z0vf-HIGEe6hZaAcAZTZTA _Z0vf-XIGEe6hZaAcAZTZTA _Z0vf-nIGEe6hZaAcAZTZTA">
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_Z0vfoXIGEe6hZaAcAZTZTA" name="Вход в систему" node="_Z0vfqHIGEe6hZaAcAZTZTA _Z0vfqXIGEe6hZaAcAZTZTA _Z0vfqnIGEe6hZaAcAZTZTA">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Z0vfonIGEe6hZaAcAZTZTA" target="_Z0vfqXIGEe6hZaAcAZTZTA" source="_Z0vfqHIGEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_Z0vfo3IGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_Z0vfpHIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Z0vfpXIGEe6hZaAcAZTZTA" target="_Z0vfqnIGEe6hZaAcAZTZTA" source="_Z0vfqXIGEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_Z0vfpnIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_Z0vfp3IGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+      </edge>
+      <node xmi:type="uml:InitialNode" xmi:id="_Z0vfqHIGEe6hZaAcAZTZTA" name="" outgoing="_Z0vfonIGEe6hZaAcAZTZTA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_Z0vfqXIGEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_Z0vfonIGEe6hZaAcAZTZTA" outgoing="_Z0vfpXIGEe6hZaAcAZTZTA">
+        <body>// TODO body of OpaqueAction1</body>
+      </node>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_Z0vfqnIGEe6hZaAcAZTZTA" name="" incoming="_Z0vfpXIGEe6hZaAcAZTZTA"/>
+    </ownedBehavior>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_Z0vfq3IGEe6hZaAcAZTZTA" name="Вход в систему" node="_Z0vfsnIGEe6hZaAcAZTZTA _Z0vfs3IGEe6hZaAcAZTZTA _Z0vftHIGEe6hZaAcAZTZTA">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Z0vfrHIGEe6hZaAcAZTZTA" target="_Z0vfs3IGEe6hZaAcAZTZTA" source="_Z0vfsnIGEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_Z0vfrXIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_Z0vfrnIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Z0vfr3IGEe6hZaAcAZTZTA" target="_Z0vftHIGEe6hZaAcAZTZTA" source="_Z0vfs3IGEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_Z0vfsHIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_Z0vfsXIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+      </edge>
+      <node xmi:type="uml:InitialNode" xmi:id="_Z0vfsnIGEe6hZaAcAZTZTA" name="" outgoing="_Z0vfrHIGEe6hZaAcAZTZTA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_Z0vfs3IGEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_Z0vfrHIGEe6hZaAcAZTZTA" outgoing="_Z0vfr3IGEe6hZaAcAZTZTA">
+        <body>// TODO body of OpaqueAction1</body>
+      </node>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_Z0vftHIGEe6hZaAcAZTZTA" name="" incoming="_Z0vfr3IGEe6hZaAcAZTZTA"/>
+    </ownedBehavior>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_Z0vftXIGEe6hZaAcAZTZTA" name="Вход в систему" node="_Z0vf0HIGEe6hZaAcAZTZTA _Z0vf0XIGEe6hZaAcAZTZTA _Z0vf0nIGEe6hZaAcAZTZTA">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_Z0vftnIGEe6hZaAcAZTZTA" name="Вход в систему" node="_Z0vfvXIGEe6hZaAcAZTZTA _Z0vfvnIGEe6hZaAcAZTZTA _Z0vfv3IGEe6hZaAcAZTZTA">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_Z0vft3IGEe6hZaAcAZTZTA" target="_Z0vfvnIGEe6hZaAcAZTZTA" source="_Z0vfvXIGEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_Z0vfuHIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_Z0vfuXIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_Z0vfunIGEe6hZaAcAZTZTA" target="_Z0vfv3IGEe6hZaAcAZTZTA" source="_Z0vfvnIGEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_Z0vfu3IGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_Z0vfvHIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+        </edge>
+        <node xmi:type="uml:InitialNode" xmi:id="_Z0vfvXIGEe6hZaAcAZTZTA" name="" outgoing="_Z0vft3IGEe6hZaAcAZTZTA"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_Z0vfvnIGEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_Z0vft3IGEe6hZaAcAZTZTA" outgoing="_Z0vfunIGEe6hZaAcAZTZTA">
+          <body>// TODO body of OpaqueAction1</body>
+        </node>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_Z0vfv3IGEe6hZaAcAZTZTA" name="" incoming="_Z0vfunIGEe6hZaAcAZTZTA"/>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_Z0vfwHIGEe6hZaAcAZTZTA" name="Вход в систему" node="_Z0vfx3IGEe6hZaAcAZTZTA _Z0vfyHIGEe6hZaAcAZTZTA _Z0vfyXIGEe6hZaAcAZTZTA">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_Z0vfwXIGEe6hZaAcAZTZTA" target="_Z0vfyHIGEe6hZaAcAZTZTA" source="_Z0vfx3IGEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_Z0vfwnIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_Z0vfw3IGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_Z0vfxHIGEe6hZaAcAZTZTA" target="_Z0vfyXIGEe6hZaAcAZTZTA" source="_Z0vfyHIGEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_Z0vfxXIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_Z0vfxnIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+        </edge>
+        <node xmi:type="uml:InitialNode" xmi:id="_Z0vfx3IGEe6hZaAcAZTZTA" name="" outgoing="_Z0vfwXIGEe6hZaAcAZTZTA"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_Z0vfyHIGEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_Z0vfwXIGEe6hZaAcAZTZTA" outgoing="_Z0vfxHIGEe6hZaAcAZTZTA">
+          <body>// TODO body of OpaqueAction1</body>
+        </node>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_Z0vfyXIGEe6hZaAcAZTZTA" name="" incoming="_Z0vfxHIGEe6hZaAcAZTZTA"/>
+      </ownedBehavior>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Z0vfynIGEe6hZaAcAZTZTA" target="_Z0vf0XIGEe6hZaAcAZTZTA" source="_Z0vf0HIGEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_Z0vfy3IGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_Z0vfzHIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Z0vfzXIGEe6hZaAcAZTZTA" target="_Z0vf0nIGEe6hZaAcAZTZTA" source="_Z0vf0XIGEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_Z0vfznIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_Z0vfz3IGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+      </edge>
+      <node xmi:type="uml:InitialNode" xmi:id="_Z0vf0HIGEe6hZaAcAZTZTA" name="" outgoing="_Z0vfynIGEe6hZaAcAZTZTA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_Z0vf0XIGEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_Z0vfynIGEe6hZaAcAZTZTA" outgoing="_Z0vfzXIGEe6hZaAcAZTZTA">
+        <body>// TODO body of OpaqueAction1</body>
+      </node>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_Z0vf0nIGEe6hZaAcAZTZTA" name="" incoming="_Z0vfzXIGEe6hZaAcAZTZTA"/>
+    </ownedBehavior>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_Z0vf03IGEe6hZaAcAZTZTA" name="Вход в систему" node="_Z0vf7nIGEe6hZaAcAZTZTA _Z0vf73IGEe6hZaAcAZTZTA _Z0vf8HIGEe6hZaAcAZTZTA">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_Z0vf1HIGEe6hZaAcAZTZTA" name="Вход в систему" node="_Z0vf23IGEe6hZaAcAZTZTA _Z0vf3HIGEe6hZaAcAZTZTA _Z0vf3XIGEe6hZaAcAZTZTA">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_Z0vf1XIGEe6hZaAcAZTZTA" target="_Z0vf3HIGEe6hZaAcAZTZTA" source="_Z0vf23IGEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_Z0vf1nIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_Z0vf13IGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_Z0vf2HIGEe6hZaAcAZTZTA" target="_Z0vf3XIGEe6hZaAcAZTZTA" source="_Z0vf3HIGEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_Z0vf2XIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_Z0vf2nIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+        </edge>
+        <node xmi:type="uml:InitialNode" xmi:id="_Z0vf23IGEe6hZaAcAZTZTA" name="" outgoing="_Z0vf1XIGEe6hZaAcAZTZTA"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_Z0vf3HIGEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_Z0vf1XIGEe6hZaAcAZTZTA" outgoing="_Z0vf2HIGEe6hZaAcAZTZTA">
+          <body>// TODO body of OpaqueAction1</body>
+        </node>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_Z0vf3XIGEe6hZaAcAZTZTA" name="" incoming="_Z0vf2HIGEe6hZaAcAZTZTA"/>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_Z0vf3nIGEe6hZaAcAZTZTA" name="Вход в систему" node="_Z0vf5XIGEe6hZaAcAZTZTA _Z0vf5nIGEe6hZaAcAZTZTA _Z0vf53IGEe6hZaAcAZTZTA">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_Z0vf33IGEe6hZaAcAZTZTA" target="_Z0vf5nIGEe6hZaAcAZTZTA" source="_Z0vf5XIGEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_Z0vf4HIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_Z0vf4XIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_Z0vf4nIGEe6hZaAcAZTZTA" target="_Z0vf53IGEe6hZaAcAZTZTA" source="_Z0vf5nIGEe6hZaAcAZTZTA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_Z0vf43IGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_Z0vf5HIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+        </edge>
+        <node xmi:type="uml:InitialNode" xmi:id="_Z0vf5XIGEe6hZaAcAZTZTA" name="" outgoing="_Z0vf33IGEe6hZaAcAZTZTA"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_Z0vf5nIGEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_Z0vf33IGEe6hZaAcAZTZTA" outgoing="_Z0vf4nIGEe6hZaAcAZTZTA">
+          <body>// TODO body of OpaqueAction1</body>
+        </node>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_Z0vf53IGEe6hZaAcAZTZTA" name="" incoming="_Z0vf4nIGEe6hZaAcAZTZTA"/>
+      </ownedBehavior>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Z0vf6HIGEe6hZaAcAZTZTA" target="_Z0vf73IGEe6hZaAcAZTZTA" source="_Z0vf7nIGEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_Z0vf6XIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_Z0vf6nIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Z0vf63IGEe6hZaAcAZTZTA" target="_Z0vf8HIGEe6hZaAcAZTZTA" source="_Z0vf73IGEe6hZaAcAZTZTA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_Z0vf7HIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_Z0vf7XIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+      </edge>
+      <node xmi:type="uml:InitialNode" xmi:id="_Z0vf7nIGEe6hZaAcAZTZTA" name="" outgoing="_Z0vf6HIGEe6hZaAcAZTZTA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_Z0vf73IGEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_Z0vf6HIGEe6hZaAcAZTZTA" outgoing="_Z0vf63IGEe6hZaAcAZTZTA">
+        <body>// TODO body of OpaqueAction1</body>
+      </node>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_Z0vf8HIGEe6hZaAcAZTZTA" name="" incoming="_Z0vf63IGEe6hZaAcAZTZTA"/>
+    </ownedBehavior>
+    <ownedParameter xmi:id="_Z0vf8XIGEe6hZaAcAZTZTA" name="Parameter1"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Z0vf8nIGEe6hZaAcAZTZTA" target="_Z0vf-XIGEe6hZaAcAZTZTA" source="_Z0vf-HIGEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_Z0vf83IGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Z0vf9HIGEe6hZaAcAZTZTA" name="_To_Ввод логина и пароля_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Z0vf9XIGEe6hZaAcAZTZTA" target="_Z0vf-nIGEe6hZaAcAZTZTA" source="_Z0vf-XIGEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_Z0vf9nIGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Z0vf93IGEe6hZaAcAZTZTA" name="Ввод логина и пароля_To__weight"/>
+    </edge>
+    <node xmi:type="uml:InitialNode" xmi:id="_Z0vf-HIGEe6hZaAcAZTZTA" name="" outgoing="_Z0vf8nIGEe6hZaAcAZTZTA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Z0vf-XIGEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_Z0vf8nIGEe6hZaAcAZTZTA" outgoing="_Z0vf9XIGEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction1</body>
+    </node>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_Z0vf-nIGEe6hZaAcAZTZTA" name="" incoming="_Z0vf9XIGEe6hZaAcAZTZTA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_fNZmYHIGEe6hZaAcAZTZTA" name="NewModel"/>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_t_80sHIGEe6hZaAcAZTZTA" name="Регестрация персонала" node="_8KdyoHIGEe6hZaAcAZTZTA _-zQZ0HIGEe6hZaAcAZTZTA _FJ5y0HIHEe6hZaAcAZTZTA _OQQ6YHIHEe6hZaAcAZTZTA _R7ZIUHIHEe6hZaAcAZTZTA _W61d0HIHEe6hZaAcAZTZTA">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_DtjJkHIHEe6hZaAcAZTZTA" target="_-zQZ0HIGEe6hZaAcAZTZTA" source="_8KdyoHIGEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_DtjJkXIHEe6hZaAcAZTZTA" name="_To_Администратор пишет логин и пароль_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_DtjJknIHEe6hZaAcAZTZTA" name="_To_Администратор пишет логин и пароль_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_KI9t0HIHEe6hZaAcAZTZTA" target="_FJ5y0HIHEe6hZaAcAZTZTA" source="_-zQZ0HIGEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_KI9t0XIHEe6hZaAcAZTZTA" name="Администратор пишет логин и пароль_To_Кладовщик или продавец_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_KI9t0nIHEe6hZaAcAZTZTA" name="Администратор пишет логин и пароль_To_Кладовщик или продавец_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_VBTwYHIHEe6hZaAcAZTZTA" name="Кладовщик" target="_R7ZIUHIHEe6hZaAcAZTZTA" source="_FJ5y0HIHEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_VBTwYXIHEe6hZaAcAZTZTA" name="Кладовщик или продавец_To_Добавление нового кладовщика в базу данных_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_VBUXcHIHEe6hZaAcAZTZTA" name="Кладовщик или продавец_To_Добавление нового кладовщика в базу данных_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Vcf3kHIHEe6hZaAcAZTZTA" name="Продавец" target="_OQQ6YHIHEe6hZaAcAZTZTA" source="_FJ5y0HIHEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_Vcf3kXIHEe6hZaAcAZTZTA" name="Кладовщик или продавец_To_Добавление нового продавца в базу данных_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Vcf3knIHEe6hZaAcAZTZTA" name="Кладовщик или продавец_To_Добавление нового продавца в базу данных_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_YAL8UHIHEe6hZaAcAZTZTA" target="_W61d0HIHEe6hZaAcAZTZTA" source="_OQQ6YHIHEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_YAL8UXIHEe6hZaAcAZTZTA" name="Добавление нового продавца в базу данных_To__guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_YAL8UnIHEe6hZaAcAZTZTA" name="Добавление нового продавца в базу данных_To__weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y4doIHIHEe6hZaAcAZTZTA" target="_W61d0HIHEe6hZaAcAZTZTA" source="_R7ZIUHIHEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_Y4doIXIHEe6hZaAcAZTZTA" name="Добавление нового кладовщика в базу данных_To__guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y4doInIHEe6hZaAcAZTZTA" name="Добавление нового кладовщика в базу данных_To__weight"/>
+    </edge>
+    <node xmi:type="uml:InitialNode" xmi:id="_8KdyoHIGEe6hZaAcAZTZTA" name="" outgoing="_DtjJkHIHEe6hZaAcAZTZTA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_-zQZ0HIGEe6hZaAcAZTZTA" name="Администратор пишет логин и пароль" incoming="_DtjJkHIHEe6hZaAcAZTZTA" outgoing="_KI9t0HIHEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction1</body>
+    </node>
+    <node xmi:type="uml:DecisionNode" xmi:id="_FJ5y0HIHEe6hZaAcAZTZTA" name="" incoming="_KI9t0HIHEe6hZaAcAZTZTA" outgoing="_VBTwYHIHEe6hZaAcAZTZTA _Vcf3kHIHEe6hZaAcAZTZTA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_OQQ6YHIHEe6hZaAcAZTZTA" name="Добавление нового продавца в базу данных" incoming="_Vcf3kHIHEe6hZaAcAZTZTA" outgoing="_YAL8UHIHEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction2</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_R7ZIUHIHEe6hZaAcAZTZTA" name="Добавление нового кладовщика в базу данных" incoming="_VBTwYHIHEe6hZaAcAZTZTA" outgoing="_Y4doIHIHEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction2</body>
+    </node>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_W61d0HIHEe6hZaAcAZTZTA" name="" incoming="_YAL8UHIHEe6hZaAcAZTZTA _Y4doIHIHEe6hZaAcAZTZTA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_ewfygHIHEe6hZaAcAZTZTA" name="NewModel"/>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_67V3oHIHEe6hZaAcAZTZTA" name="Регестрация пользователя" node="_-gARMHIHEe6hZaAcAZTZTA _MyrFkHIIEe6hZaAcAZTZTA _O_Pq0HIIEe6hZaAcAZTZTA _Qp7D8HIIEe6hZaAcAZTZTA _TEyj4HIIEe6hZaAcAZTZTA _YzU0AHIIEe6hZaAcAZTZTA">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_aBbl4HIIEe6hZaAcAZTZTA" target="_MyrFkHIIEe6hZaAcAZTZTA" source="_-gARMHIHEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_aBbl4XIIEe6hZaAcAZTZTA" name="_To_Пользователь вводит логин_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_aBbl4nIIEe6hZaAcAZTZTA" name="_To_Пользователь вводит логин_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_af3OUHIIEe6hZaAcAZTZTA" target="_O_Pq0HIIEe6hZaAcAZTZTA" source="_MyrFkHIIEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_af3OUXIIEe6hZaAcAZTZTA" name="Пользователь вводит логин_To_Пользователь вводит пароль_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_af31YHIIEe6hZaAcAZTZTA" name="Пользователь вводит логин_To_Пользователь вводит пароль_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_cpWDUHIIEe6hZaAcAZTZTA" target="_Qp7D8HIIEe6hZaAcAZTZTA" source="_O_Pq0HIIEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_cpWqYHIIEe6hZaAcAZTZTA" name="Пользователь вводит пароль_To_Пользователь подтверждает пароль_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_cpWqYXIIEe6hZaAcAZTZTA" name="Пользователь вводит пароль_To_Пользователь подтверждает пароль_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_dJgxIHIIEe6hZaAcAZTZTA" target="_TEyj4HIIEe6hZaAcAZTZTA" source="_Qp7D8HIIEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_dJgxIXIIEe6hZaAcAZTZTA" name="Пользователь подтверждает пароль_To_Сохранение нового пользователя в базу данных_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_dJgxInIIEe6hZaAcAZTZTA" name="Пользователь подтверждает пароль_To_Сохранение нового пользователя в базу данных_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_dnJIUHIIEe6hZaAcAZTZTA" target="_YzU0AHIIEe6hZaAcAZTZTA" source="_TEyj4HIIEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_dnJIUXIIEe6hZaAcAZTZTA" name="Сохранение нового пользователя в базу данных_To__guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_dnJvYHIIEe6hZaAcAZTZTA" name="Сохранение нового пользователя в базу данных_To__weight"/>
+    </edge>
+    <node xmi:type="uml:InitialNode" xmi:id="_-gARMHIHEe6hZaAcAZTZTA" name="" outgoing="_aBbl4HIIEe6hZaAcAZTZTA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_MyrFkHIIEe6hZaAcAZTZTA" name="Пользователь вводит логин" incoming="_aBbl4HIIEe6hZaAcAZTZTA" outgoing="_af3OUHIIEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction1</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_O_Pq0HIIEe6hZaAcAZTZTA" name="Пользователь вводит пароль" incoming="_af3OUHIIEe6hZaAcAZTZTA" outgoing="_cpWDUHIIEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction2</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Qp7D8HIIEe6hZaAcAZTZTA" name="Пользователь подтверждает пароль" incoming="_cpWDUHIIEe6hZaAcAZTZTA" outgoing="_dJgxIHIIEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction3</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_TEyj4HIIEe6hZaAcAZTZTA" name="Сохранение нового пользователя в базу данных" incoming="_dJgxIHIIEe6hZaAcAZTZTA" outgoing="_dnJIUHIIEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction4</body>
+    </node>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_YzU0AHIIEe6hZaAcAZTZTA" name="" incoming="_dnJIUHIIEe6hZaAcAZTZTA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_ez4BMHIIEe6hZaAcAZTZTA" name="Вход в систему" node="_lrMeUHIIEe6hZaAcAZTZTA _oZB9kHIIEe6hZaAcAZTZTA _83N5AHIIEe6hZaAcAZTZTA _EA1AAHIJEe6hZaAcAZTZTA">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_FN53IHIJEe6hZaAcAZTZTA" target="_oZB9kHIIEe6hZaAcAZTZTA" source="_lrMeUHIIEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_FN53IXIJEe6hZaAcAZTZTA" name="_To_Пользователь вводит логин_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_FN53InIJEe6hZaAcAZTZTA" name="_To_Пользователь вводит логин_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_FkqxUHIJEe6hZaAcAZTZTA" source="_oZB9kHIIEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_FkqxUXIJEe6hZaAcAZTZTA" name="Пользователь вводит логин_To_Пользователь вводит пароль_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_FkqxUnIJEe6hZaAcAZTZTA" name="Пользователь вводит логин_To_Пользователь вводит пароль_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_F5kqUHIJEe6hZaAcAZTZTA" target="_83N5AHIIEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_F5kqUXIJEe6hZaAcAZTZTA" name="Пользователь вводит пароль_To_Вход в систему_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_F5kqUnIJEe6hZaAcAZTZTA" name="Пользователь вводит пароль_To_Вход в систему_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_GX0FgHIJEe6hZaAcAZTZTA" target="_EA1AAHIJEe6hZaAcAZTZTA" source="_83N5AHIIEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_GX0FgXIJEe6hZaAcAZTZTA" name="Вход в систему_To__guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_GX0FgnIJEe6hZaAcAZTZTA" name="Вход в систему_To__weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_HBjXUHIPEe6hZaAcAZTZTA" target="_83N5AHIIEe6hZaAcAZTZTA" source="_oZB9kHIIEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_HBjXUXIPEe6hZaAcAZTZTA" name="Пользователь вводит логин_To_Вход в систему_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_HBjXUnIPEe6hZaAcAZTZTA" name="Пользователь вводит логин_To_Вход в систему_weight"/>
+    </edge>
+    <node xmi:type="uml:InitialNode" xmi:id="_lrMeUHIIEe6hZaAcAZTZTA" name="" outgoing="_FN53IHIJEe6hZaAcAZTZTA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_oZB9kHIIEe6hZaAcAZTZTA" name="Ввод логина и пароля" incoming="_FN53IHIJEe6hZaAcAZTZTA" outgoing="_FkqxUHIJEe6hZaAcAZTZTA _HBjXUHIPEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction1</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_83N5AHIIEe6hZaAcAZTZTA" name="Вход в систему" incoming="_F5kqUHIJEe6hZaAcAZTZTA _HBjXUHIPEe6hZaAcAZTZTA" outgoing="_GX0FgHIJEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction3</body>
+    </node>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_EA1AAHIJEe6hZaAcAZTZTA" name="" incoming="_GX0FgHIJEe6hZaAcAZTZTA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_IOt8wHIJEe6hZaAcAZTZTA" name="Просмотр каталога" node="_WUMCoHIJEe6hZaAcAZTZTA _bXjO0HIJEe6hZaAcAZTZTA _d1JSoHIJEe6hZaAcAZTZTA _fgNtUHIJEe6hZaAcAZTZTA _kfzz0HIJEe6hZaAcAZTZTA">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_lULQAHIJEe6hZaAcAZTZTA" target="_bXjO0HIJEe6hZaAcAZTZTA" source="_WUMCoHIJEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_lULQAXIJEe6hZaAcAZTZTA" name="_To_Покупатель открывает каталог_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_lULQAnIJEe6hZaAcAZTZTA" name="_To_Покупатель открывает каталог_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_lmaPgHIJEe6hZaAcAZTZTA" target="_d1JSoHIJEe6hZaAcAZTZTA" source="_bXjO0HIJEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_lmaPgXIJEe6hZaAcAZTZTA" name="Покупатель открывает каталог_To_Просматривает каталог_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_lma2kHIJEe6hZaAcAZTZTA" name="Покупатель открывает каталог_To_Просматривает каталог_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_l7_d8HIJEe6hZaAcAZTZTA" target="_fgNtUHIJEe6hZaAcAZTZTA" source="_d1JSoHIJEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_l7_d8XIJEe6hZaAcAZTZTA" name="Просматривает каталог_To_Закрывает каталог_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_l7_d8nIJEe6hZaAcAZTZTA" name="Просматривает каталог_To_Закрывает каталог_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_odHW4HIJEe6hZaAcAZTZTA" target="_kfzz0HIJEe6hZaAcAZTZTA" source="_fgNtUHIJEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_odHW4XIJEe6hZaAcAZTZTA" name="Закрывает каталог_To__guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_odHW4nIJEe6hZaAcAZTZTA" name="Закрывает каталог_To__weight"/>
+    </edge>
+    <node xmi:type="uml:InitialNode" xmi:id="_WUMCoHIJEe6hZaAcAZTZTA" name="" outgoing="_lULQAHIJEe6hZaAcAZTZTA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_bXjO0HIJEe6hZaAcAZTZTA" name="Покупатель открывает каталог" incoming="_lULQAHIJEe6hZaAcAZTZTA" outgoing="_lmaPgHIJEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction1</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_d1JSoHIJEe6hZaAcAZTZTA" name="Просматривает каталог" incoming="_lmaPgHIJEe6hZaAcAZTZTA" outgoing="_l7_d8HIJEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction2</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_fgNtUHIJEe6hZaAcAZTZTA" name="Закрывает каталог" incoming="_l7_d8HIJEe6hZaAcAZTZTA" outgoing="_odHW4HIJEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction3</body>
+    </node>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_kfzz0HIJEe6hZaAcAZTZTA" name="" incoming="_odHW4HIJEe6hZaAcAZTZTA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_4-9YkHIJEe6hZaAcAZTZTA" name="Забыли пароль" node="_9FODUHIJEe6hZaAcAZTZTA _994wsHIJEe6hZaAcAZTZTA _AifbcHIKEe6hZaAcAZTZTA _C8VnsHIKEe6hZaAcAZTZTA _G1Y84HIKEe6hZaAcAZTZTA _IrTVoHIKEe6hZaAcAZTZTA _X5mEwHIKEe6hZaAcAZTZTA _bDUOwHIKEe6hZaAcAZTZTA">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_c4Di0HIKEe6hZaAcAZTZTA" target="_994wsHIJEe6hZaAcAZTZTA" source="_9FODUHIJEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_c4Di0XIKEe6hZaAcAZTZTA" name="_To_Пользователь вводит логин_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_c4Di0nIKEe6hZaAcAZTZTA" name="_To_Пользователь вводит логин_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_dLli0HIKEe6hZaAcAZTZTA" target="_AifbcHIKEe6hZaAcAZTZTA" source="_994wsHIJEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_dLli0XIKEe6hZaAcAZTZTA" name="Пользователь вводит логин_To_Получает код на почту_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_dLli0nIKEe6hZaAcAZTZTA" name="Пользователь вводит логин_To_Получает код на почту_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_dtq8MHIKEe6hZaAcAZTZTA" target="_C8VnsHIKEe6hZaAcAZTZTA" source="_AifbcHIKEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_dtq8MXIKEe6hZaAcAZTZTA" name="Получает код на почту_To_Вводит код_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_dtq8MnIKEe6hZaAcAZTZTA" name="Получает код на почту_To_Вводит код_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_einnMHIKEe6hZaAcAZTZTA" target="_IrTVoHIKEe6hZaAcAZTZTA" source="_G1Y84HIKEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_einnMXIKEe6hZaAcAZTZTA" name="Вводит новый пароль_To_Подтверждает новый пароль_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_einnMnIKEe6hZaAcAZTZTA" name="Вводит новый пароль_To_Подтверждает новый пароль_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_e_cGEHIKEe6hZaAcAZTZTA" target="_X5mEwHIKEe6hZaAcAZTZTA" source="_IrTVoHIKEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_e_cGEXIKEe6hZaAcAZTZTA" name="Подтверждает новый пароль_To_Сохранение нового пароля в базу данных_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_e_cGEnIKEe6hZaAcAZTZTA" name="Подтверждает новый пароль_To_Сохранение нового пароля в базу данных_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_fZ2KIHIKEe6hZaAcAZTZTA" target="_bDUOwHIKEe6hZaAcAZTZTA" source="_X5mEwHIKEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_fZ2KIXIKEe6hZaAcAZTZTA" name="Сохранение нового пароля в базу данных_To__guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_fZ2KInIKEe6hZaAcAZTZTA" name="Сохранение нового пароля в базу данных_To__weight"/>
+    </edge>
+    <node xmi:type="uml:InitialNode" xmi:id="_9FODUHIJEe6hZaAcAZTZTA" name="" outgoing="_c4Di0HIKEe6hZaAcAZTZTA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_994wsHIJEe6hZaAcAZTZTA" name="Пользователь вводит логин" incoming="_c4Di0HIKEe6hZaAcAZTZTA" outgoing="_dLli0HIKEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction1</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_AifbcHIKEe6hZaAcAZTZTA" name="Получает код на почту" incoming="_dLli0HIKEe6hZaAcAZTZTA" outgoing="_dtq8MHIKEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction2</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_C8VnsHIKEe6hZaAcAZTZTA" name="Вводит код" incoming="_dtq8MHIKEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction3</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_G1Y84HIKEe6hZaAcAZTZTA" name="Вводит новый пароль" outgoing="_einnMHIKEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction4</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_IrTVoHIKEe6hZaAcAZTZTA" name="Подтверждает новый пароль" incoming="_einnMHIKEe6hZaAcAZTZTA" outgoing="_e_cGEHIKEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction5</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_X5mEwHIKEe6hZaAcAZTZTA" name="Сохранение нового пароля в базу данных" incoming="_e_cGEHIKEe6hZaAcAZTZTA" outgoing="_fZ2KIHIKEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction6</body>
+    </node>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_bDUOwHIKEe6hZaAcAZTZTA" name="" incoming="_fZ2KIHIKEe6hZaAcAZTZTA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_nU0coHIKEe6hZaAcAZTZTA" name="Составление списка товаров" node="_rzm8IHIKEe6hZaAcAZTZTA _w-RqMHIKEe6hZaAcAZTZTA _ynBJoHIKEe6hZaAcAZTZTA _4I9vQHIKEe6hZaAcAZTZTA _6HFo0HIKEe6hZaAcAZTZTA _Ay-SAHILEe6hZaAcAZTZTA _Q28r8HILEe6hZaAcAZTZTA _S6_AQHILEe6hZaAcAZTZTA">
+    <edge xmi:type="uml:ControlFlow" xmi:id="__JZFEHIKEe6hZaAcAZTZTA" name="Добавить товар" target="_ynBJoHIKEe6hZaAcAZTZTA" source="_w-RqMHIKEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="__JZFEXIKEe6hZaAcAZTZTA" name="_To_Добавляет товар_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="__JZFEnIKEe6hZaAcAZTZTA" name="_To_Добавляет товар_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="__r5VMHIKEe6hZaAcAZTZTA" name="Нет" target="_4I9vQHIKEe6hZaAcAZTZTA" source="_w-RqMHIKEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="__r5VMXIKEe6hZaAcAZTZTA" name="_To__guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="__r5VMnIKEe6hZaAcAZTZTA" name="_To__weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_E0zIsHILEe6hZaAcAZTZTA" name="Удалить товар" target="_6HFo0HIKEe6hZaAcAZTZTA" source="_4I9vQHIKEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_E0zIsXILEe6hZaAcAZTZTA" name="_To_Администратор удаляет товар_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_E0zIsnILEe6hZaAcAZTZTA" name="_To_Администратор удаляет товар_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_FijmkHILEe6hZaAcAZTZTA" name="Изменить товар" target="_Ay-SAHILEe6hZaAcAZTZTA" source="_4I9vQHIKEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_FijmkXILEe6hZaAcAZTZTA" name="_To_Администратор изменяет товар_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_FijmknILEe6hZaAcAZTZTA" name="_To_Администратор изменяет товар_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_UnTYIHILEe6hZaAcAZTZTA" target="_Q28r8HILEe6hZaAcAZTZTA" source="_Ay-SAHILEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_UnTYIXILEe6hZaAcAZTZTA" name="Администратор изменяет товар_To_Сохранение списка товаров_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_UnTYInILEe6hZaAcAZTZTA" name="Администратор изменяет товар_To_Сохранение списка товаров_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U_43QHILEe6hZaAcAZTZTA" target="_Q28r8HILEe6hZaAcAZTZTA" source="_6HFo0HIKEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_U_43QXILEe6hZaAcAZTZTA" name="Администратор удаляет товар_To_Сохранение списка товаров_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_U_43QnILEe6hZaAcAZTZTA" name="Администратор удаляет товар_To_Сохранение списка товаров_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_VXT4wHILEe6hZaAcAZTZTA" target="_Q28r8HILEe6hZaAcAZTZTA" source="_ynBJoHIKEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_VXT4wXILEe6hZaAcAZTZTA" name="Администратор добавляет товар_To_Сохранение списка товаров_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_VXT4wnILEe6hZaAcAZTZTA" name="Администратор добавляет товар_To_Сохранение списка товаров_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_UmgRcHIMEe6hZaAcAZTZTA" source="_Q28r8HILEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_UmgRcXIMEe6hZaAcAZTZTA" name="Сохранение списка товаров_To_Создание накладной_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_UmgRcnIMEe6hZaAcAZTZTA" name="Сохранение списка товаров_To_Создание накладной_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U6zGcHIMEe6hZaAcAZTZTA" target="_S6_AQHILEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_U6zGcXIMEe6hZaAcAZTZTA" name="Создание накладной_To__guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_U6zGcnIMEe6hZaAcAZTZTA" name="Создание накладной_To__weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="__N-YMHIMEe6hZaAcAZTZTA" target="_S6_AQHILEe6hZaAcAZTZTA" source="_Q28r8HILEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="__N-YMXIMEe6hZaAcAZTZTA" name="Сохранение списка товаров_To__guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="__N-_QHIMEe6hZaAcAZTZTA" name="Сохранение списка товаров_To__weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_uPmmYHJrEe69Oo4xPPbEdw" target="_w-RqMHIKEe6hZaAcAZTZTA" source="_rzm8IHIKEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_uPn0gHJrEe69Oo4xPPbEdw" name="_To__guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_uPobkHJrEe69Oo4xPPbEdw" name="_To__weight"/>
+    </edge>
+    <node xmi:type="uml:InitialNode" xmi:id="_rzm8IHIKEe6hZaAcAZTZTA" name="" outgoing="_uPmmYHJrEe69Oo4xPPbEdw"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_w-RqMHIKEe6hZaAcAZTZTA" name="" incoming="_uPmmYHJrEe69Oo4xPPbEdw" outgoing="__JZFEHIKEe6hZaAcAZTZTA __r5VMHIKEe6hZaAcAZTZTA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ynBJoHIKEe6hZaAcAZTZTA" name="Администратор добавляет товар" incoming="__JZFEHIKEe6hZaAcAZTZTA" outgoing="_VXT4wHILEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction1</body>
+    </node>
+    <node xmi:type="uml:DecisionNode" xmi:id="_4I9vQHIKEe6hZaAcAZTZTA" name="" incoming="__r5VMHIKEe6hZaAcAZTZTA" outgoing="_E0zIsHILEe6hZaAcAZTZTA _FijmkHILEe6hZaAcAZTZTA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_6HFo0HIKEe6hZaAcAZTZTA" name="Администратор удаляет товар" incoming="_E0zIsHILEe6hZaAcAZTZTA" outgoing="_U_43QHILEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction2</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Ay-SAHILEe6hZaAcAZTZTA" name="Администратор изменяет товар" incoming="_FijmkHILEe6hZaAcAZTZTA" outgoing="_UnTYIHILEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction3</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Q28r8HILEe6hZaAcAZTZTA" name="Сохранение списка товаров" incoming="_UnTYIHILEe6hZaAcAZTZTA _U_43QHILEe6hZaAcAZTZTA _VXT4wHILEe6hZaAcAZTZTA" outgoing="_UmgRcHIMEe6hZaAcAZTZTA __N-YMHIMEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction4</body>
+    </node>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_S6_AQHILEe6hZaAcAZTZTA" name="" incoming="_U6zGcHIMEe6hZaAcAZTZTA __N-YMHIMEe6hZaAcAZTZTA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_t5IowHILEe6hZaAcAZTZTA" name="Приём товаров" node="_55LTMHILEe6hZaAcAZTZTA _8Io0YHILEe6hZaAcAZTZTA _BHHgkHIMEe6hZaAcAZTZTA _F1DPUHIMEe6hZaAcAZTZTA _I2cjwHIMEe6hZaAcAZTZTA" group="_xXzvEHILEe6hZaAcAZTZTA _yi7eYHILEe6hZaAcAZTZTA" partition="_xXzvEHILEe6hZaAcAZTZTA _yi7eYHILEe6hZaAcAZTZTA">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_KHet0HIMEe6hZaAcAZTZTA" target="_8Io0YHILEe6hZaAcAZTZTA" source="_55LTMHILEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_KHet0XIMEe6hZaAcAZTZTA" name="_To_Администратор составляет список товаров и накладную_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_KHet0nIMEe6hZaAcAZTZTA" name="_To_Администратор составляет список товаров и накладную_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_KeaAEHIMEe6hZaAcAZTZTA" target="_BHHgkHIMEe6hZaAcAZTZTA" source="_8Io0YHILEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_KeaAEXIMEe6hZaAcAZTZTA" name="Администратор составляет список товаров и накладную_To_Делает заказ товаров_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_KeaAEnIMEe6hZaAcAZTZTA" name="Администратор составляет список товаров и накладную_To_Делает заказ товаров_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Kyn8kHIMEe6hZaAcAZTZTA" target="_F1DPUHIMEe6hZaAcAZTZTA" source="_BHHgkHIMEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_Kyn8kXIMEe6hZaAcAZTZTA" name="Делает заказ товаров_To_Кладовщик принимает товары_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Kyn8knIMEe6hZaAcAZTZTA" name="Делает заказ товаров_To_Кладовщик принимает товары_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_LIrFEHIMEe6hZaAcAZTZTA" target="_I2cjwHIMEe6hZaAcAZTZTA" source="_F1DPUHIMEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_LIrFEXIMEe6hZaAcAZTZTA" name="Кладовщик принимает товары_To__guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_LIrFEnIMEe6hZaAcAZTZTA" name="Кладовщик принимает товары_To__weight"/>
+    </edge>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_xXzvEHILEe6hZaAcAZTZTA" name="Администратор" node="_55LTMHILEe6hZaAcAZTZTA _8Io0YHILEe6hZaAcAZTZTA _BHHgkHIMEe6hZaAcAZTZTA"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_yi7eYHILEe6hZaAcAZTZTA" name="Кладовщик" node="_F1DPUHIMEe6hZaAcAZTZTA _I2cjwHIMEe6hZaAcAZTZTA"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_55LTMHILEe6hZaAcAZTZTA" name="" outgoing="_KHet0HIMEe6hZaAcAZTZTA" inPartition="_xXzvEHILEe6hZaAcAZTZTA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_8Io0YHILEe6hZaAcAZTZTA" name="Администратор составляет список товаров и накладную" incoming="_KHet0HIMEe6hZaAcAZTZTA" outgoing="_KeaAEHIMEe6hZaAcAZTZTA" inPartition="_xXzvEHILEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction1</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BHHgkHIMEe6hZaAcAZTZTA" name="Делает заказ товаров" incoming="_KeaAEHIMEe6hZaAcAZTZTA" outgoing="_Kyn8kHIMEe6hZaAcAZTZTA" inPartition="_xXzvEHILEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction2</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_F1DPUHIMEe6hZaAcAZTZTA" name="Кладовщик принимает товары" incoming="_Kyn8kHIMEe6hZaAcAZTZTA" outgoing="_LIrFEHIMEe6hZaAcAZTZTA" inPartition="_yi7eYHILEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction3</body>
+    </node>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_I2cjwHIMEe6hZaAcAZTZTA" name="" incoming="_LIrFEHIMEe6hZaAcAZTZTA" inPartition="_yi7eYHILEe6hZaAcAZTZTA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_uq6OgHIMEe6hZaAcAZTZTA" name="" visibility="public"/>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_Go-xMHINEe6hZaAcAZTZTA" name="Отправка товаров в магазин" node="_MX40wHINEe6hZaAcAZTZTA _NQNj4HINEe6hZaAcAZTZTA _T6dOUHINEe6hZaAcAZTZTA _XEgIcHINEe6hZaAcAZTZTA _ZanEMHINEe6hZaAcAZTZTA _mM2AkHINEe6hZaAcAZTZTA _op7uEHINEe6hZaAcAZTZTA" group="_N9uKIHINEe6hZaAcAZTZTA _O76QsHINEe6hZaAcAZTZTA" partition="_N9uKIHINEe6hZaAcAZTZTA _O76QsHINEe6hZaAcAZTZTA">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_r6qfAHINEe6hZaAcAZTZTA" target="_T6dOUHINEe6hZaAcAZTZTA" source="_MX40wHINEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_r6qfAXINEe6hZaAcAZTZTA" name="_To_Продавец составляет накладную_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_r6qfAnINEe6hZaAcAZTZTA" name="_To_Продавец составляет накладную_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_sXu1gHINEe6hZaAcAZTZTA" target="_XEgIcHINEe6hZaAcAZTZTA" source="_T6dOUHINEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_sXvckHINEe6hZaAcAZTZTA" name="Продавец составляет накладную_To_Отправляет накладную на склад_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_sXvckXINEe6hZaAcAZTZTA" name="Продавец составляет накладную_To_Отправляет накладную на склад_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_unxlgHINEe6hZaAcAZTZTA" target="_ZanEMHINEe6hZaAcAZTZTA" source="_XEgIcHINEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_unxlgXINEe6hZaAcAZTZTA" name="Отправляет накладную на склад_To_Кладовщик подбирает товары на основе накладной_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_unxlgnINEe6hZaAcAZTZTA" name="Отправляет накладную на склад_To_Кладовщик подбирает товары на основе накладной_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_u4WYIHINEe6hZaAcAZTZTA" target="_mM2AkHINEe6hZaAcAZTZTA" source="_ZanEMHINEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_u4WYIXINEe6hZaAcAZTZTA" name="Кладовщик подбирает товары на основе накладной_To_Отправляет товары в магазин_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_u4WYInINEe6hZaAcAZTZTA" name="Кладовщик подбирает товары на основе накладной_To_Отправляет товары в магазин_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_vLbFIHINEe6hZaAcAZTZTA" target="_op7uEHINEe6hZaAcAZTZTA" source="_mM2AkHINEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_vLbFIXINEe6hZaAcAZTZTA" name="Отправляет товары в магазин_To_Продавец получает товары со склада_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_vLbFInINEe6hZaAcAZTZTA" name="Отправляет товары в магазин_To_Продавец получает товары со склада_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_vjY5MHINEe6hZaAcAZTZTA" target="_NQNj4HINEe6hZaAcAZTZTA" source="_op7uEHINEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_vjY5MXINEe6hZaAcAZTZTA" name="Продавец получает товары со склада_To__guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_vjY5MnINEe6hZaAcAZTZTA" name="Продавец получает товары со склада_To__weight"/>
+    </edge>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_N9uKIHINEe6hZaAcAZTZTA" name="Кладовщик" node="_ZanEMHINEe6hZaAcAZTZTA _mM2AkHINEe6hZaAcAZTZTA"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_O76QsHINEe6hZaAcAZTZTA" name="Продавец" node="_MX40wHINEe6hZaAcAZTZTA _T6dOUHINEe6hZaAcAZTZTA _XEgIcHINEe6hZaAcAZTZTA _op7uEHINEe6hZaAcAZTZTA _NQNj4HINEe6hZaAcAZTZTA"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_MX40wHINEe6hZaAcAZTZTA" name="" outgoing="_r6qfAHINEe6hZaAcAZTZTA" inPartition="_O76QsHINEe6hZaAcAZTZTA"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_NQNj4HINEe6hZaAcAZTZTA" name="" incoming="_vjY5MHINEe6hZaAcAZTZTA" inPartition="_O76QsHINEe6hZaAcAZTZTA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_T6dOUHINEe6hZaAcAZTZTA" name="Продавец составляет накладную" incoming="_r6qfAHINEe6hZaAcAZTZTA" outgoing="_sXu1gHINEe6hZaAcAZTZTA" inPartition="_O76QsHINEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction1</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_XEgIcHINEe6hZaAcAZTZTA" name="Отправляет накладную на склад" incoming="_sXu1gHINEe6hZaAcAZTZTA" outgoing="_unxlgHINEe6hZaAcAZTZTA" inPartition="_O76QsHINEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction2</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ZanEMHINEe6hZaAcAZTZTA" name="Кладовщик подбирает товары на основе накладной" incoming="_unxlgHINEe6hZaAcAZTZTA" outgoing="_u4WYIHINEe6hZaAcAZTZTA" inPartition="_N9uKIHINEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction3</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_mM2AkHINEe6hZaAcAZTZTA" name="Отправляет товары в магазин" incoming="_u4WYIHINEe6hZaAcAZTZTA" outgoing="_vLbFIHINEe6hZaAcAZTZTA" inPartition="_N9uKIHINEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction4</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_op7uEHINEe6hZaAcAZTZTA" name="Продавец получает товары со склада" incoming="_vLbFIHINEe6hZaAcAZTZTA" outgoing="_vjY5MHINEe6hZaAcAZTZTA" inPartition="_O76QsHINEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction5</body>
+    </node>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_75wY8HINEe6hZaAcAZTZTA" name="Заказ товаров" node="_M4a5gHIOEe6hZaAcAZTZTA _NlRYcHIOEe6hZaAcAZTZTA _YhrboHIOEe6hZaAcAZTZTA _b6Fh4HIOEe6hZaAcAZTZTA _kN-DoHIOEe6hZaAcAZTZTA _la9bMHIOEe6hZaAcAZTZTA _qKH5AHIOEe6hZaAcAZTZTA _xE-LQHIOEe6hZaAcAZTZTA _fFbnoHJ-Ee69Oo4xPPbEdw _vgfr4HJ-Ee69Oo4xPPbEdw _9VXJ8HJ-Ee69Oo4xPPbEdw _CJ7FIHJ_Ee69Oo4xPPbEdw" group="_IzfEcHIOEe6hZaAcAZTZTA _JvTMcHIOEe6hZaAcAZTZTA" partition="_IzfEcHIOEe6hZaAcAZTZTA _JvTMcHIOEe6hZaAcAZTZTA">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_u2uyEHIOEe6hZaAcAZTZTA" target="_kN-DoHIOEe6hZaAcAZTZTA" source="_b6Fh4HIOEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_u2uyEXIOEe6hZaAcAZTZTA" name="Продавец получает информацию о заказе_To__guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_u2uyEnIOEe6hZaAcAZTZTA" name="Продавец получает информацию о заказе_To__weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_vOejsHIOEe6hZaAcAZTZTA" target="_la9bMHIOEe6hZaAcAZTZTA" source="_kN-DoHIOEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_vOejsXIOEe6hZaAcAZTZTA" name="_To_Производит заказ со склада_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_vOejsnIOEe6hZaAcAZTZTA" name="_To_Производит заказ со склада_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_vqApIHIOEe6hZaAcAZTZTA" target="_qKH5AHIOEe6hZaAcAZTZTA" source="_kN-DoHIOEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_vqApIXIOEe6hZaAcAZTZTA" name="_To_Подготавливает товар для выдачи покупателю_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_vqBQMHIOEe6hZaAcAZTZTA" name="_To_Подготавливает товар для выдачи покупателю_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_wFLiMHIOEe6hZaAcAZTZTA" target="_qKH5AHIOEe6hZaAcAZTZTA" source="_la9bMHIOEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_wFLiMXIOEe6hZaAcAZTZTA" name="Производит заказ со склада_To_Подготавливает товар для выдачи покупателю_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_wFLiMnIOEe6hZaAcAZTZTA" name="Производит заказ со склада_To_Подготавливает товар для выдачи покупателю_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_19YrsHIOEe6hZaAcAZTZTA" target="_xE-LQHIOEe6hZaAcAZTZTA" source="_qKH5AHIOEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_19YrsXIOEe6hZaAcAZTZTA" name="Подготавливает товар для выдачи покупателю_To_Покупатель забирает товар_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_19YrsnIOEe6hZaAcAZTZTA" name="Подготавливает товар для выдачи покупателю_To_Покупатель забирает товар_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_2pXA4HIOEe6hZaAcAZTZTA" source="_M4a5gHIOEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_2pXA4XIOEe6hZaAcAZTZTA" name="_To_Покупатель выбирает товар из каталога_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_2pXA4nIOEe6hZaAcAZTZTA" name="_To_Покупатель выбирает товар из каталога_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_29W68HIOEe6hZaAcAZTZTA" target="_YhrboHIOEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_29W68XIOEe6hZaAcAZTZTA" name="Покупатель выбирает товар из каталога_To_Оплачивает товар_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_29W68nIOEe6hZaAcAZTZTA" name="Покупатель выбирает товар из каталога_To_Оплачивает товар_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_3sSdgHIOEe6hZaAcAZTZTA" target="_NlRYcHIOEe6hZaAcAZTZTA" source="_xE-LQHIOEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_3sSdgXIOEe6hZaAcAZTZTA" name="Покупатель забирает товар_To__guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_3sSdgnIOEe6hZaAcAZTZTA" name="Покупатель забирает товар_To__weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_5DLX8HIOEe6hZaAcAZTZTA" target="_b6Fh4HIOEe6hZaAcAZTZTA" source="_YhrboHIOEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_5DLX8XIOEe6hZaAcAZTZTA" name="Оплачивает товар_To_Продавец получает информацию о заказе_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_5DLX8nIOEe6hZaAcAZTZTA" name="Оплачивает товар_To_Продавец получает информацию о заказе_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_0P4MIHJ-Ee69Oo4xPPbEdw" target="_vgfr4HJ-Ee69Oo4xPPbEdw" source="_M4a5gHIOEe6hZaAcAZTZTA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_0P4MIXJ-Ee69Oo4xPPbEdw" name="_To__guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_0P4MInJ-Ee69Oo4xPPbEdw" name="_To__weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_FY2fQHJ_Ee69Oo4xPPbEdw" target="_fFbnoHJ-Ee69Oo4xPPbEdw" source="_vgfr4HJ-Ee69Oo4xPPbEdw">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_FY3GUHJ_Ee69Oo4xPPbEdw" name="_To_Добавить товар_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_FY3GUXJ_Ee69Oo4xPPbEdw" name="_To_Добавить товар_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_GJi8YHJ_Ee69Oo4xPPbEdw" target="_9VXJ8HJ-Ee69Oo4xPPbEdw" source="_vgfr4HJ-Ee69Oo4xPPbEdw">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_GJjjcHJ_Ee69Oo4xPPbEdw" name="_To_Удалить товар_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_GJjjcXJ_Ee69Oo4xPPbEdw" name="_To_Удалить товар_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_G-8TUHJ_Ee69Oo4xPPbEdw" target="_CJ7FIHJ_Ee69Oo4xPPbEdw" source="_vgfr4HJ-Ee69Oo4xPPbEdw">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_G-86YHJ_Ee69Oo4xPPbEdw" name="_To_Изменить количество товара_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_G-86YXJ_Ee69Oo4xPPbEdw" name="_To_Изменить количество товара_weight"/>
+    </edge>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_IzfEcHIOEe6hZaAcAZTZTA" name="Покупатель" node="_M4a5gHIOEe6hZaAcAZTZTA _YhrboHIOEe6hZaAcAZTZTA _xE-LQHIOEe6hZaAcAZTZTA _NlRYcHIOEe6hZaAcAZTZTA _fFbnoHJ-Ee69Oo4xPPbEdw _vgfr4HJ-Ee69Oo4xPPbEdw _9VXJ8HJ-Ee69Oo4xPPbEdw _CJ7FIHJ_Ee69Oo4xPPbEdw"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_JvTMcHIOEe6hZaAcAZTZTA" name="Продавец" node="_b6Fh4HIOEe6hZaAcAZTZTA _kN-DoHIOEe6hZaAcAZTZTA _la9bMHIOEe6hZaAcAZTZTA _qKH5AHIOEe6hZaAcAZTZTA"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_M4a5gHIOEe6hZaAcAZTZTA" name="" outgoing="_2pXA4HIOEe6hZaAcAZTZTA _0P4MIHJ-Ee69Oo4xPPbEdw" inPartition="_IzfEcHIOEe6hZaAcAZTZTA"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_NlRYcHIOEe6hZaAcAZTZTA" name="" incoming="_3sSdgHIOEe6hZaAcAZTZTA" inPartition="_IzfEcHIOEe6hZaAcAZTZTA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_YhrboHIOEe6hZaAcAZTZTA" name="Оплачивает товар" incoming="_29W68HIOEe6hZaAcAZTZTA" outgoing="_5DLX8HIOEe6hZaAcAZTZTA" inPartition="_IzfEcHIOEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction2</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_b6Fh4HIOEe6hZaAcAZTZTA" name="Продавец получает информацию о заказе" incoming="_5DLX8HIOEe6hZaAcAZTZTA" outgoing="_u2uyEHIOEe6hZaAcAZTZTA" inPartition="_JvTMcHIOEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction3</body>
+    </node>
+    <node xmi:type="uml:DecisionNode" xmi:id="_kN-DoHIOEe6hZaAcAZTZTA" name="" incoming="_u2uyEHIOEe6hZaAcAZTZTA" outgoing="_vOejsHIOEe6hZaAcAZTZTA _vqApIHIOEe6hZaAcAZTZTA" inPartition="_JvTMcHIOEe6hZaAcAZTZTA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_la9bMHIOEe6hZaAcAZTZTA" name="Производит заказ со склада" incoming="_vOejsHIOEe6hZaAcAZTZTA" outgoing="_wFLiMHIOEe6hZaAcAZTZTA" inPartition="_JvTMcHIOEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction4</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_qKH5AHIOEe6hZaAcAZTZTA" name="Подготавливает товар для выдачи покупателю" incoming="_vqApIHIOEe6hZaAcAZTZTA _wFLiMHIOEe6hZaAcAZTZTA" outgoing="_19YrsHIOEe6hZaAcAZTZTA" inPartition="_JvTMcHIOEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction5</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_xE-LQHIOEe6hZaAcAZTZTA" name="Покупатель забирает товар" incoming="_19YrsHIOEe6hZaAcAZTZTA" outgoing="_3sSdgHIOEe6hZaAcAZTZTA" inPartition="_IzfEcHIOEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction6</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_fFbnoHJ-Ee69Oo4xPPbEdw" name="Добавить товар" visibility="public" incoming="_FY2fQHJ_Ee69Oo4xPPbEdw" inPartition="_IzfEcHIOEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction7</body>
+    </node>
+    <node xmi:type="uml:DecisionNode" xmi:id="_vgfr4HJ-Ee69Oo4xPPbEdw" name="" incoming="_0P4MIHJ-Ee69Oo4xPPbEdw" outgoing="_FY2fQHJ_Ee69Oo4xPPbEdw _GJi8YHJ_Ee69Oo4xPPbEdw _G-8TUHJ_Ee69Oo4xPPbEdw" inPartition="_IzfEcHIOEe6hZaAcAZTZTA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_9VXJ8HJ-Ee69Oo4xPPbEdw" name="Удалить товар" incoming="_GJi8YHJ_Ee69Oo4xPPbEdw" inPartition="_IzfEcHIOEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction7</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_CJ7FIHJ_Ee69Oo4xPPbEdw" name="Изменить количество товара" incoming="_G-8TUHJ_Ee69Oo4xPPbEdw" inPartition="_IzfEcHIOEe6hZaAcAZTZTA">
+      <body>// TODO body of OpaqueAction8</body>
+    </node>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_88jjAHJrEe69Oo4xPPbEdw" memberEnd="_88jjAXJrEe69Oo4xPPbEdw _88jjBHJrEe69Oo4xPPbEdw" navigableOwnedEnd="_88jjAXJrEe69Oo4xPPbEdw _88jjBHJrEe69Oo4xPPbEdw">
+    <ownedEnd xmi:id="_88jjAXJrEe69Oo4xPPbEdw" name="пользовательs" type="_oXWOQHHWEe6dk5_2zlmDiA" association="_88jjAHJrEe69Oo4xPPbEdw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_88jjAnJrEe69Oo4xPPbEdw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_88jjA3JrEe69Oo4xPPbEdw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_88jjBHJrEe69Oo4xPPbEdw" name="регестрация персоналаs" type="_m7VwcGyKEe65l6EfhkxMNw" association="_88jjAHJrEe69Oo4xPPbEdw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_88jjBXJrEe69Oo4xPPbEdw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_88jjBnJrEe69Oo4xPPbEdw" value="*"/>
     </ownedEnd>
   </packagedElement>
 </uml:Model>
